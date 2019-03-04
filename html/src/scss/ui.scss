@@ -24,6 +24,9 @@ html, body {
         margin:0 5px;
     }
 }
+select.form-control {
+    padding:0 1.15rem;
+}
 
 .col_max_mid {
     max-width:1200px;
@@ -60,6 +63,96 @@ html, body {
     }
 }
 
+.inp_inline_wrap {
+    display:inline-block;
+    vertical-align:top;
+    font-size:0;
+    .inp_inline {
+        display:inline-block;
+        vertical-align:top;
+        box-sizing:border-box;
+        margin-left:5px;
+        &.x2 {
+            width:40%;
+            margin-left:2%;
+        }
+        &.x3 {
+            width:32%;
+            margin-left:2%;
+        }
+        &.x4 {
+            width:22%;
+            margin-left:2%;
+        }
+        &.x5 {
+            width:20%;
+            margin-left:2%;
+        }
+        &.x6 {
+            width:11%;
+            margin-left:1%;
+        }
+        &.x7 {
+            width:5%;
+            margin-left:1%;
+            .txt {
+                margin:0;
+            }
+        }
+        &:first-child {
+            margin-left:0;
+        }
+        &.ma_sm {
+            margin-left:1% !important;
+        }
+        &.ma_lm {
+            margin-left:20px !important;
+        }
+        .txt {
+            display:block;
+            font-size:14px;
+            vertical-align:middle;
+            font-weight:bold;
+            text-align:center;
+            line-height:40px;
+            margin:0 5px;
+        }
+    }
+    .m-radio-inline, .m-checkbox-inline {
+        margin-top:10px !important;
+    }
+}
+
+.form_search {
+    border:1px solid #ebedf2;
+    border-top:solid 1px #000;
+    padding:30px 20px;
+    .inp_inline_wrap {
+        margin:0 20px 20px 0;
+        &:last-child {
+            margin:0;
+        }
+        .inp_label {
+            display:inline-block;
+            vertical-align:middle;
+            line-height:40px;
+            margin-right:10px;
+        }
+        select {
+            min-width:100px;
+        }
+    }
+}
+.search_btn {
+    border-top:1px solid #ebedf2;
+    text-align:right;
+    padding-top:20px;
+    .btn_list {
+        display:inline-block;
+        vertical-align:top;
+        margin:0 5px;
+    }
+}
 
 .form_wrap {
     
@@ -246,6 +339,30 @@ hr {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
+}
+
+.file_list {
+    margin:0;
+    padding:20px 0 40px;
+    li {
+        margin-top:5px;
+        text-align:left;
+        list-style-type:none;
+        &:first-child {
+            margin:0;
+        }
+        .btn_del {
+            display:inline-block;
+            font-size:0;
+            margin-left:10px;
+            border:solid 1px #f4516c !important;
+            text-decoration:none;
+            i {
+                display:block;
+                font-size:12px;
+            }
+        }
+    }
 }
 
 .user_list {
