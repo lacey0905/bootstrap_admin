@@ -499,3 +499,109 @@ hr.hide {
     line-height: 40px; }
     .table_wrap .td_list li:first-child {
       border-top: 0; }
+
+.modal_default {
+  width: 100%;
+  background-color: #fff;
+  padding: 0 30px; }
+  .modal_default .modal_head {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 68px;
+    background-color: #fff; }
+    .modal_default .modal_head .title {
+      font-size: 24px;
+      line-height: 68px;
+      text-align: center; }
+    .modal_default .modal_head .close {
+      position: absolute;
+      top: 10px;
+      right: 15px; }
+  .modal_default .scroll_content {
+    border-top: solid 1px #000;
+    padding: 30px 0;
+    line-height: 1.8em;
+    overflow-y: auto;
+    overflow-x: hidden; }
+  .modal_default .modal_content {
+    padding-top: 68px; }
+  .modal_default .modal_foot {
+    height: 80px;
+    border-top: solid 1px #000; }
+    .modal_default .modal_foot .modal_btn {
+      text-align: center;
+      padding: 20px 0; }
+      .modal_default .modal_foot .modal_btn .btn {
+        margin: 0 2px; }
+  .modal_default.size_fix {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 580px;
+    margin: -290px 0 0 -300px;
+    border: solid 1px #d6d6d6; }
+    .modal_default.size_fix .scroll_content {
+      width: 538px;
+      height: 400px; }
+    .modal_default.size_fix .modal_foot {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0; }
+
+.msg_form {
+  padding: 0 0 30px 0; }
+  .msg_form .msg_title {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 20px;
+    text-align: center; }
+  .msg_form .btn_form {
+    overflow: hidden; }
+    .msg_form .btn_form .m-input {
+      width: calc(100% - 100px);
+      float: left; }
+    .msg_form .btn_form .btn {
+      width: 90px;
+      margin-left: 10px;
+      float: left; }
+
+.modal_board .modal_head {
+  background-color: #5867dd;
+  color: #fff;
+  padding: 10px; }
+  .modal_board .modal_head .title {
+    font-size: 14px;
+    margin: 0; }
+  .modal_board .modal_head .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #fff !important; }
+
+.modal_board .modal_content {
+  padding: 15px; }
+
+.modal_board.size_fix {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  margin: -290px 0 0 -300px;
+  border: solid 1px #d6d6d6; }
+  .modal_board.size_fix .scroll_content {
+    width: 538px; }
+  .modal_board.size_fix .modal_foot {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+
+.modal_search {
+  padding-bottom: 15px;
+  text-align: right; }
+  .modal_search .inp_inline_wrap {
+    width: 100%; }

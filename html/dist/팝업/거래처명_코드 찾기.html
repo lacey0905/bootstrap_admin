@@ -1,0 +1,99 @@
+<html>
+<head>
+    <title>팝업</title>
+    <link href="../assets/vendors/base/vendors.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/demo/demo12/base/style.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="../css/ui.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <!--
+        사이즈 고정 + 가운데 고정
+        <div class="modal_default size_fix">
+    -->
+    <div class="modal_board">
+        <div class="modal_head">
+            <h2 class="title">거래처명/코드 찾기</h2>
+            <button type="button" class="close">
+                <i class="la la-close"></i>
+            </button>
+        </div>
+        <div class="modal_content">
+            <div class="modal_search">
+                <div class="inp_inline_wrap">
+                    <div class="inp_inline m-radio-inline">
+                        <label class="m-radio">
+                            <input type="checkbox" name="radio"> 라디오버튼
+                            <span></span>
+                        </label>
+                    </div>
+                    <div class="inp_inline x1 ma_lm">
+                        <select class="form-control m-input" id="">
+                            <option>거래처명</option>
+                        </select>
+                    </div>
+                    <div class="inp_inline x3">
+                        <input type="text" class="form-control m-input">
+                    </div>
+                    <div class="inp_inline">
+                        <button type="button" class="btn btn-primary">찾기</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 조회 테이블 -->
+            <div class="table_wrap box">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>거래처 코드</th>
+                            <th>거래처명</th>
+                            <th>사업자번호</th>
+                            <th>사업자명</th>
+                            <th>전화번호</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="5">등록/검색 된 결과가 없습니다.</td>
+                        </tr>
+                        <tr>
+                            <td>1231241414</td>
+                            <td>주)네일여행</td>
+                            <td>1230395484</td>
+                            <td>홍길동</td>
+                            <td>010-1234-1234</td>
+                        </tr>
+                        <tr>
+                            <td>1231241414</td>
+                            <td>주)네일여행</td>
+                            <td>1230395484</td>
+                            <td>홍길동</td>
+                            <td>010-1234-1234</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- 페이징 -->
+                <div class="m-datatable m-datatable--default m-datatable--brand m-datatable--loaded pager_center">
+                    <div class="m-datatable__pager m-datatable--paging-loaded clearfix">
+                        <ul class="m-datatable__pager-nav">
+                            <li><a title="First" class="m-datatable__pager-link m-datatable__pager-link--first m-datatable__pager-link--disabled" data-page="1" disabled="disabled"><i class="la la-angle-double-left"></i></a></li>
+                            <li><a title="Previous" class="m-datatable__pager-link m-datatable__pager-link--prev m-datatable__pager-link--disabled" data-page="1" disabled="disabled"><i class="la la-angle-left"></i></a></li>
+                            <li><a class="m-datatable__pager-link m-datatable__pager-link-number m-datatable__pager-link--active" data-page="1" title="1">1</a></li>
+                            <li><a class="m-datatable__pager-link m-datatable__pager-link-number" data-page="1" title="1">2</a></li>
+                            <li><a class="m-datatable__pager-link m-datatable__pager-link-number" data-page="1" title="1">3</a></li>
+                            <li><a class="m-datatable__pager-link m-datatable__pager-link-number" data-page="1" title="1">4</a></li>
+                            <li><a title="Next" class="m-datatable__pager-link m-datatable__pager-link--next" data-page="2"><i class="la la-angle-right"></i></a></li>
+                            <li><a title="Last" class="m-datatable__pager-link m-datatable__pager-link--last" data-page="10"><i class="la la-angle-double-right"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- // -->
+            </div>
+            <!-- // 조회 테이블 END -->
+            <!-- // 테이블 -->
+        </div>
+    </div>
+    <script src="../assets/vendors/base/vendors.bundle.js" type="text/javascript"></script>
+    <script src="../assets/demo/demo12/base/scripts.bundle.js" type="text/javascript"></script>
+    <script src="../js/bootstrap-datepicker.js" type="text/javascript"></script>
+</body>
+</html>

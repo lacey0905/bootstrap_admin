@@ -665,3 +665,138 @@ hr {
         }
     }
 }
+
+// Modal
+.modal_default {
+    width:100%;
+    background-color:#fff;
+    padding:0 30px;
+    .modal_head {
+        position: absolute;
+        top:0;
+        left:0;
+        right:0;
+        height:68px;
+        background-color:#fff;
+        .title {
+            font-size:24px;
+            line-height:68px;
+            text-align:center;
+        }
+        .close {
+            position: absolute;
+            top:10px;
+            right:15px;
+        }
+    }
+    .scroll_content {
+        border-top:solid 1px #000;
+        padding:30px 0;
+        line-height:1.8em;
+        overflow-y: auto;
+        overflow-x:hidden;
+        
+    }
+    .modal_content {
+        padding-top:68px;
+    }
+    .modal_foot {
+        height:80px;
+        border-top:solid 1px #000;
+        .modal_btn {
+            text-align:center;
+            padding:20px 0;
+            .btn {
+                margin:0 2px;
+            }
+        }
+    }
+    &.size_fix {
+        position: absolute;
+        top:50%;
+        left:50%;
+        width:600px;
+        height:580px;
+        margin:-290px 0 0 -300px;
+        border:solid 1px #d6d6d6;
+        .scroll_content {
+            width:538px;
+            height:400px;
+        }
+        .modal_foot {
+            position: absolute;
+            bottom:0;
+            left:0;
+            right:0;
+        }
+    }
+}
+
+.msg_form {
+    padding:0 0 30px 0;
+    .msg_title {
+        font-size:14px;
+        font-weight:400;
+        padding:20px;
+        text-align:center;
+    }
+    .btn_form {
+        overflow: hidden;
+        .m-input {
+            width:calc(100% - 100px);
+            float:left;
+        }
+        .btn {
+            width:90px;
+            margin-left:10px;
+            float:left;
+        }
+    }
+}
+
+.modal_board {
+    .modal_head {
+        background-color:#5867dd;
+        color:#fff;
+        padding:10px;
+        .title {
+            font-size:14px;
+            margin:0;
+        }
+        .close {
+            position: absolute;
+            top:10px;
+            right:15px;
+            color:#fff !important;
+        }
+    }
+    .modal_content {
+        padding:15px;
+    }
+    &.size_fix {
+        position: absolute;
+        top:50%;
+        left:50%;
+        width:600px;
+        // height:580px;
+        margin:-290px 0 0 -300px;
+        border:solid 1px #d6d6d6;
+        .scroll_content {
+            width:538px;
+            // height:400px;
+        }
+        .modal_foot {
+            position: absolute;
+            bottom:0;
+            left:0;
+            right:0;
+        }
+    }
+}
+.modal_search {
+    padding-bottom:15px;
+    text-align:right;
+    .inp_inline_wrap {
+        width:100%;
+    }
+}
