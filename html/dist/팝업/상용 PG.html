@@ -1,0 +1,150 @@
+<html>
+<head>
+    <title>팝업</title>
+    <link href="../assets/vendors/base/vendors.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/demo/demo12/base/style.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="../css/ui.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <!--
+        사이즈 고정 + 가운데 고정
+        <div class="modal_default size_fix">
+    -->
+    <div class="modal_board">
+        <div class="modal_head">
+            <h2 class="title">상용 PG</h2>
+            <button type="button" class="close">
+                <i class="la la-close"></i>
+            </button>
+        </div>
+        <div class="modal_content">
+        <!-- <form action="" method=""> -->
+            <div class="modal_form">
+                <table class="form_table">
+                    <tbody>
+                        <tr>
+                            <th class="form_tit">주문번호</th>
+                            <td class="form_cont">123124124</td>
+                            <th class="form_tit">입금사원</th>
+                            <td class="form_cont">홍길동</td>
+                        </tr>
+                        <tr>
+                            <th class="form_tit">입금자명</th>
+                            <td class="form_cont">
+                                <input type="text" class="form-control m-input">
+                            </td>
+                            <th class="form_tit">입금액</th>
+                            <td class="form_cont">
+                                <input type="text" class="form-control m-input">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="form_tit">카드종류</th>
+                            <td class="form_cont">
+                                <select class="form-control m-input" id="">
+                                    <option>카드종류</option>
+                                </select>
+                            </td>
+                            <th class="form_tit">카드번호</th>
+                            <td class="form_cont">
+                                1234-1234-1234-0000
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="form_tit">유효기간</th>
+                            <td class="form_cont" colspan="3">
+                                <div class="form_row">
+                                    <div class="inp_inline_wrap">
+                                        <div class="inp_inline">
+                                            <select class="form-control m-input" id="">
+                                                <option>선택</option>
+                                            </select>
+                                        </div>
+                                        <div class="inp_inline txt">년</div>
+                                        <div class="inp_inline">
+                                            <select class="form-control m-input" id="">
+                                                <option>선택</option>
+                                            </select>
+                                        </div>
+                                        <div class="inp_inline txt">월</div>
+                                        <div class="inp_inline ma_lm">
+                                            <label class="m-radio">
+                                                <input type="radio" name="" checked="">일시불<span></span>
+                                            </label>
+                                        </div>
+                                        <div class="inp_inline ma_lm">
+                                            <label class="m-radio">
+                                                <input type="radio" name="">할부<span></span>
+                                            </label>
+                                        </div>
+                                        <div class="inp_inline ma_sm">
+                                            <select class="form-control m-input" id="">
+                                                <option>할부선택</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="form_tit">카드포인트</th>
+                            <td class="form_cont">
+                                <div class="form_row">
+                                    <div class="inp_inline_wrap">
+                                        <div class="inp_inline ma_lm">
+                                            <label class="m-radio">
+                                                <input type="radio" name="" checked="">미사용<span></span>
+                                            </label>
+                                        </div>
+                                        <div class="inp_inline ma_lm">
+                                            <label class="m-radio">
+                                                <input type="radio" name="">사용<span></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <th class="form_tit">결제채널</th>
+                            <td class="form_cont">
+                                <select class="form-control m-input" id="">
+                                    <option>선택</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="form_tit">연락처</th>
+                            <td class="form_cont"><input type="text" class="form-control m-input"></td>
+                            <th class="form_tit">이메일</th>
+                            <td class="form_cont"><input type="text" class="form-control m-input"></td>
+                        </tr>
+                        <tr>
+                            <th class="form_tit">비고</th>
+                            <td class="form_cont" colspan="3"><input type="text" class="form-control m-input"></td>
+                        </tr>
+                        <tr>
+                            <th class="form_tit">결제종류</th>
+                            <td class="form_cont" colspan="3"><input type="text" class="form-control m-input" value="이니시스"></td>
+                        </tr>
+                        <tr>
+                            <th class="form_tit">수수료율</th>
+                            <td class="form_cont"><input type="text" class="form-control m-input" value="0%"></td>
+                            <th class="form_tit">수수료</th>
+                            <td class="form_cont"><input type="text" class="form-control m-input" value="0"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        <!-- </form> -->
+        </div>
+        <div class="modal_foot">
+            <div class="modal_btn">
+                <button type="button" class="btn btn-secondary m-btn--wide">취소</button>
+                <button type="button" class="btn btn-primary m-btn--wide">결제</button>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/vendors/base/vendors.bundle.js" type="text/javascript"></script>
+    <script src="../assets/demo/demo12/base/scripts.bundle.js" type="text/javascript"></script>
+    <script src="../js/bootstrap-datepicker.js" type="text/javascript"></script>
+</body>
+</html>

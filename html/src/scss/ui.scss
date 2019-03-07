@@ -40,6 +40,10 @@ select.form-control {
     font-size:1.2rem;
 }
 
+.modal-dialog {
+    max-width:900px;
+}
+
 
 .m-portlet__head-text {
     .opt {
@@ -141,6 +145,10 @@ select.form-control {
                 margin:0;
             }
         }
+        &.txt {
+            font-size:12px;
+            font-weight:400;
+        }
         &:first-child {
             margin-left:0;
         }
@@ -149,6 +157,9 @@ select.form-control {
         }
         &.ma_lm {
             margin-left:20px !important;
+        }
+        &.ma_sm {
+            margin-left:15px !important;
         }
         .txt {
             display:block;
@@ -169,6 +180,12 @@ select.form-control {
     border:1px solid #ebedf2;
     border-top:solid 1px #000;
     padding:30px 20px;
+    .inp_inline {
+        vertical-align:top;
+        .form-group {
+            padding:0;
+        }
+    }
     .inp_inline_wrap {
         margin:0 20px 20px 0;
         &:last-child {
@@ -596,8 +613,23 @@ hr {
 }
 
 .table_wrap {
+    width:100%;    
+    overflow-x: auto;
+    overflow-y: hidden;
     table {
         width:100%;    
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+    .m-checkbox {
+        width:18px;
+        height:18px;
+        margin:0;
+        padding:0;
+        span {
+            top:2px;
+            background-color:#fff;
+        }
     }
     .caption {
         margin-bottom:10px;
@@ -690,6 +722,7 @@ hr {
         }
     }
     .scroll_content {
+        height:400px;
         border-top:solid 1px #000;
         padding:30px 0;
         line-height:1.8em;
@@ -699,17 +732,6 @@ hr {
     }
     .modal_content {
         padding-top:68px;
-    }
-    .modal_foot {
-        height:80px;
-        border-top:solid 1px #000;
-        .modal_btn {
-            text-align:center;
-            padding:20px 0;
-            .btn {
-                margin:0 2px;
-            }
-        }
     }
     &.size_fix {
         position: absolute;
@@ -721,13 +743,24 @@ hr {
         border:solid 1px #d6d6d6;
         .scroll_content {
             width:538px;
-            height:400px;
         }
         .modal_foot {
             position: absolute;
             bottom:0;
             left:0;
             right:0;
+        }
+    }
+}
+
+.modal_foot {
+    height:80px;
+    border-top:solid 1px #000;
+    .modal_btn {
+        text-align:center;
+        padding:20px 0;
+        .btn {
+            margin:0 2px;
         }
     }
 }
@@ -750,6 +783,18 @@ hr {
             width:90px;
             margin-left:10px;
             float:left;
+        }
+    }
+    .result {
+        list-style-type: none;
+        padding:30px;
+        li {
+            a {
+                display:block;
+                color:#000;
+                line-height:26px;
+            }
+            
         }
     }
 }
@@ -798,5 +843,122 @@ hr {
     text-align:right;
     .inp_inline_wrap {
         width:100%;
+        .label {
+            font-size:14px;
+            font-weight:400;
+            line-height:40px;
+        }
+    }
+}
+
+.form-group {
+    .caption {
+        font-weight:400;
+        line-height:26px;
+        color:#8c8c8c;
+    }
+}
+
+.form_table {
+    width:100%;
+    .form_tit {
+        width:120px;
+        background-color:#f7f8fa;
+        border:1px solid #ebedf2;
+        box-sizing:border-box;
+        padding:5px 10px;
+        font-weight:400;
+        font-size:14px;
+        vertical-align:middle;
+        color:#575962;
+        .m-radio {
+            span {
+                background-color:#fff;
+            }
+        }
+    }
+    .form_cont {
+        border:1px solid #ebedf2;
+        box-sizing:border-box;
+        padding:5px 10px;
+        font-weight:400;
+        font-size:14px;
+        line-height:26px;
+    }
+    .m-input, .custom-file-input, .custom-file-label, .custom-file {
+        height:26px;
+        line-height:26px;
+        font-size:12px;
+        padding:0 10px;
+    }
+    .custom-file-label::after {
+        height:24px;
+        line-height:24px;
+        padding:0 10px;
+    }
+    .m-radio, .m-checkbox {
+        margin:0;
+        padding-left:25px;
+    }
+}
+
+.form_cont_row {
+    display:block;
+    .inp_inline_wrap {
+        display:block;
+        position: relative;
+        top:-2px;
+    }
+    .inp_inline {
+        vertical-align:middle;
+        margin-right:20px;
+        margin-top:5px;
+        margin-left:0;
+        line-height:20px;
+    }
+    &:first-child {
+        margin-left:0;
+    }
+    .inp_inline {
+        .m-input {
+            display:inline-block;
+            width:100px;
+            margin-left:10px;
+        }
+    }
+}
+
+.form_row {
+    display:block;
+    &.row {
+        margin:5px 0;
+    }
+  
+    .inp_inline_wrap {
+        display:block;
+    }
+    .m-radio, .m-checkbox {
+        span {
+            top:4px;
+        }
+    }
+}
+
+.form_btn {
+    position: relative;
+    .form_row {
+        padding-right:70px;
+    }
+    .add_btn {
+        position: absolute;
+        top:0;
+        right:0;
+        bottom:0;
+        width:70px;
+        .btn {
+            position: absolute;
+            top:50%;
+            margin-top:-15px;
+        }
     }
 }
