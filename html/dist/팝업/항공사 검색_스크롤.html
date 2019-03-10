@@ -1,0 +1,95 @@
+<html>
+<head>
+    <title>팝업</title>
+    <link href="../assets/vendors/base/vendors.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/demo/demo12/base/style.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="../css/ui.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <!--
+        사이즈 고정 + 가운데 고정
+        <div class="modal_default size_fix">
+    -->
+    <div class="modal_board">
+        <div class="modal_head">
+            <h2 class="title">거래처명/코드 찾기</h2>
+            <button type="button" class="close">
+                <i class="la la-close"></i>
+            </button>
+        </div>
+        <div class="modal_content">
+            <div class="modal_search label">
+                <div class="inp_inline_wrap">
+                    <div class="inp_inline">
+                        <div class="label">항공사명/항공사코드</div>
+                    </div>
+                    <div class="inp_inline x3">
+                        <input type="text" class="form-control m-input">
+                    </div>
+                    <div class="inp_inline">
+                        <button type="button" class="btn btn-primary">조회</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 조회 테이블 -->
+            <div class="table_wrap box scroll">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>항공사 코드</th>
+                            <th>한글명</th>
+                            <th>영문명</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="3">등록/검색 된 결과가 없습니다.</td>
+                        </tr>
+                        <tr>
+                            <td>ZZ</td>
+                            <td>홍길동</td>
+                            <td>Hong gil dong</td>
+                        </tr>
+                        <tr>
+                            <td>ZZ</td>
+                            <td>홍길동</td>
+                            <td>Hong gil dong</td>
+                        </tr>
+                        <tr>
+                            <td>ZZ</td>
+                            <td>홍길동</td>
+                            <td>Hong gil dong</td>
+                        </tr>
+                        <tr>
+                            <td>ZZ</td>
+                            <td>홍길동</td>
+                            <td>Hong gil dong</td>
+                        </tr>
+                        <tr>
+                            <td>ZZ</td>
+                            <td>홍길동</td>
+                            <td>Hong gil dong</td>
+                        </tr>
+                        <tr>
+                            <td>ZZ</td>
+                            <td>홍길동</td>
+                            <td>Hong gil dong</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- // 조회 테이블 END -->
+            <!-- // 테이블 -->
+        </div>
+        <div class="modal_foot">
+            <div class="modal_btn">
+                <button type="button" class="btn btn-secondary m-btn--wide">취소</button>
+                <button type="button" class="btn btn-primary m-btn--wide">선택</button>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/vendors/base/vendors.bundle.js" type="text/javascript"></script>
+    <script src="../assets/demo/demo12/base/scripts.bundle.js" type="text/javascript"></script>
+    <script src="../js/bootstrap-datepicker.js" type="text/javascript"></script>
+</body>
+</html>

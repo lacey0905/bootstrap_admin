@@ -616,6 +616,33 @@ hr {
     width:100%;    
     overflow-x: auto;
     overflow-y: hidden;
+    &.scroll {
+        table {
+            border-collapse:collapse; 
+            width:100%;
+            border-bottom:solid 1px #afafaf;
+            margin:0;
+            th, td {
+                width:100px;
+            }
+            thead {
+                float:left; 
+                width:100%;
+                padding-right:20px;
+            }
+            tbody {
+                overflow-y:auto; 
+                overflow-x:hidden; 
+                float:left; 
+                width:100%;
+                height:300px;
+            }
+            tr {
+                display:table; 
+                width:100%;
+            }
+        }
+    }
     table {
         width:100%;    
         overflow-x: auto;
@@ -851,16 +878,123 @@ hr {
     }
 }
 
+.add_text {
+    margin-bottom:20px;
+    line-height:22px;
+    ul {
+        list-style-type: none;
+        padding: 0;
+        .tit {
+            font-weight:500;
+        }
+        .on {
+            font-weight:500;
+            color:#f4516c !important;
+        }
+        span {
+            font-weight: 400;
+            color: #7b7e8a;
+        }
+    }
+}
+
 .form-group {
     .caption {
         font-weight:400;
-        line-height:26px;
+        line-height:40px;
+        margin-left:15px;
         color:#8c8c8c;
+    }
+}
+
+.m-portlet__body {
+    .text {
+        line-height:40px;
+    }
+}
+
+.invoice {
+    .caption {
+        margin-top:15px;
+    }
+    .stamp {
+        width:200px;
+        margin:40px auto;
+        img {
+            width:100%;
+        }
+    }
+    .notice {
+        border-top:1px solid #ebedf2;
+        strong {
+            display:block;
+            margin:15px 0 5px;
+        }
+    }
+}
+
+.invoice_top {
+    position: absolute;
+    top:50px;
+    left:15px;
+    width:300px;
+    overflow: hidden;
+    select {
+        width:120px;
+        height:28px;
+        padding:0 5px;
+        margin-right:10px;
+        border:solid 1px #666;
+        float:left;
+    }
+}
+
+.invoice_table {
+    .m-input {
+        width:300px;
+    }
+}
+
+.invoice_info_table {
+    margin-top:30px;
+    .head {
+        text-align:center;
+        font-weight:500 !important;
+        color:#000;
     }
 }
 
 .form_table {
     width:100%;
+    .unit {
+        th {
+            font-weight:500 !important;
+            color:#000;
+        }
+        .label {
+            display:inline-block;
+            width:40px;
+        }
+        input {
+            display:inline-block;
+            width:260px;
+            text-align:right;
+        }
+    }
+    .total {
+        th {
+            background-color:#f4516c;
+            color:#fff;
+        }
+        td {
+           .m-input {
+               text-align:right;
+               font-weight:600;
+               color:#f4516c;
+           }
+           background-color: #f7f8fa;
+        }
+    }
     .form_tit {
         width:120px;
         background-color:#f7f8fa;
@@ -885,6 +1019,7 @@ hr {
         font-size:14px;
         line-height:26px;
     }
+    
     .m-input, .custom-file-input, .custom-file-label, .custom-file {
         height:26px;
         line-height:26px;
@@ -959,6 +1094,225 @@ hr {
             position: absolute;
             top:50%;
             margin-top:-15px;
+        }
+    }
+}
+
+
+.modal_change {
+    .control {
+        padding:10px;
+        background-color:#f7f8fa;
+        border-bottom:solid 1px #000;
+        overflow: hidden;
+        .contorl_select {
+            width:25%;
+            float:left;
+        }
+        .control_search {
+            width:38%;
+            margin-left:2%;
+            float:left;
+            overflow: hidden;
+            .control_search_select {
+                width:40%;
+                float:left;
+            }
+            .control_search_input {
+                width:58%;
+                margin-left:2%;
+                float:left;
+            }
+        }
+        .control_input {
+            width:33%;
+            margin-left:2%;
+            float:left;
+            .control_txt_input {
+                width:60%;
+                float:left;
+            }
+            .control_txt_button {
+                width:38%;
+                margin-left:2%;
+                float:left;
+            }
+        }
+        margin-bottom:20px;
+    }
+    .change_view {
+        overflow: hidden;
+        .push, .pop {
+            width:49%;
+            float:left;
+        }
+        .pop {
+            margin-left:2%;
+        }
+        .title {
+            display:block;
+            font-weight:500;
+            font-size:14px;
+            color:#000;
+            line-height:34px;
+            em {
+                color:#5867dd;
+                font-style:normal;
+                margin-left:2px;
+            }
+        }
+        .list {
+            height:300px;
+            list-style-type:none;
+            padding:10px;
+            border:solid 1px #ebedf2;
+            margin:0;
+            li {
+                position: relative;
+                padding-left:24px;
+                line-height:26px;
+            }
+            a {
+                font-size:12px;
+                font-weight:300;
+                color:#898b96;
+                em {
+                    color:#000;
+                    font-style:normal;
+                    font-weight:500;
+                    
+                }
+                i {
+                    position: absolute;
+                    left:0;
+                    top:4px;
+                    font-size:20px;
+                    color:#2e40d4;
+                    text-decoration:none;
+                    &.la-minus-square {
+                        color:#f4516c;
+                    }
+                }
+                &:hover {
+                    color:#2e40d4;
+                    em {
+                        color:#2e40d4;
+                    }
+                }
+            }
+        }
+    }
+}
+.change_view_caption {
+    margin:8px 0 40px;
+    font-size:12px;
+    font-weight:300;
+    color:#898b96;
+    i {
+        position: relative;
+        top:2px;
+        margin-right:2px;
+    }
+}
+
+.modal_choice {
+    .control {
+        padding:10px;
+        background-color:#f7f8fa;
+        border-bottom:solid 1px #000;
+        text-align:center;
+        .control_input {
+            width:100%;
+            .label {
+                display:inline-block;
+                vertical-align:middle;
+                line-height:40px;
+                margin-right:15px;
+            }
+            .control_txt_input {
+                width:40%;
+                display:inline-block;
+                vertical-align:top;
+                margin-right:5px;
+            }
+            .control_txt_button {
+                display:inline-block;
+                vertical-align:top;
+            }
+        }
+        margin-bottom:20px;
+    }
+    .change_view {
+        height:300px;
+        overflow-y:auto;
+        overflow-x:hidden;
+        dl {
+            border-top:solid 1px #ebedf2;
+            margin:0;
+            &:first-child {
+                border:0;
+                dt {
+                    margin-top:0;
+                }
+            }
+            dt {
+                margin-top:15px;
+            }
+            dd {
+                padding-left:30px;
+            }
+        }
+        label {
+            font-weight:400;
+        }
+    }
+}
+
+.invoice_info {
+    position: absolute;
+    top:50px;
+    right:20px;
+    width:200px;
+    overflow: hidden;
+    dt {
+        width:50px;
+        line-height:25px;
+        font-weight:500;
+        float:left;
+    }
+    dd {
+        width:150px;
+        float:left;
+        input {
+            padding:0 8px;
+            height:25px;
+        }
+    }
+}
+
+.invoice_head {
+    margin-bottom:50px;
+    .logo {
+        margin-top:45;
+    }
+    .indent {
+        font-weight:300;
+        margin-left:20px;
+    }
+    .indent + dd {
+        width:130px;
+    }
+    p {
+        em {
+            display:inline-block;
+            font-style:normal;
+            font-size:26px;
+        }
+        span {
+            display:inline-block;
+            font-weight:400;
+            font-size:13px;
+            margin-left:5px;
         }
     }
 }

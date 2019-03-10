@@ -1,0 +1,97 @@
+<html>
+<head>
+    <title>팝업</title>
+    <link href="../assets/vendors/base/vendors.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/demo/demo12/base/style.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="../css/ui.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="modal_default">
+        <div class="modal_head">
+            <h2 class="title">탑승객 변경</h2>
+            <button type="b utton" class="close">
+                <span aria-hidden="true">×</span>
+            </button>
+        </div>
+        <div class="modal_content">
+            <div class="modal_change">
+                <div class="control">
+                    <div class="contorl_select">
+                        <select class="form-control m-input" id="">
+                            <option>타이드스퀘어</option>
+                        </select>
+                    </div>
+                    <div class="control_search">
+                        <select class="form-control m-input control_search_select" id="">
+                            <option>본사</option>
+                        </select>
+                        <input type="text" class="form-control m-input control_search_input">
+                    </div>
+                    <div class="control_input">
+                        <input type="text" class="form-control m-input control_txt_input" placeholder="이름">
+                        <button type="button" class="btn btn-primary control_txt_button">검색</button>
+                    </div>
+                </div>
+                <div class="change_view">
+                    <div class="push">
+                        <strong class="title">검색결과</strong>
+                        <ul class="list">
+                            <li>
+                                <a href="#">
+                                    <i class="la la-plus-square"></i>
+                                    <span class="name"><em>홍길동</em> (사장 | 인사팀 | ts0479@tidesquare.com)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="la la-plus-square"></i>
+                                    <span class="name"><em>홍길동</em> (사장 | 인사팀 | ts0479@tidesquare.com)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="la la-plus-square"></i>
+                                    <span class="name"><em>홍길동</em> (사장 | 인사팀 | ts0479@tidesquare.com)</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pop">
+                        <strong class="title">수신자<em>(3명)</em></strong>
+                        <ul class="list">
+                            <li>
+                                <a href="#">
+                                    <i class="la la-minus-square"></i>
+                                    <span class="name"><em>홍길동</em> (사장 | 인사팀 | ts0479@tidesquare.com)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="la la-minus-square"></i>
+                                    <span class="name"><em>홍길동</em> (사장 | 인사팀 | ts0479@tidesquare.com)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="la la-minus-square"></i>
+                                    <span class="name"><em>홍길동</em> (사장 | 인사팀 | ts0479@tidesquare.com)</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="change_view_caption"><i class="la la-tag"></i>선택하시면 영역으로 이동됩니다.</p>
+            </div>
+        </div>
+        <div class="modal_foot">
+            <div class="modal_btn">
+                <button type="button" class="btn btn-secondary m-btn--wide">취소</button>
+                <button type="button" class="btn btn-primary m-btn--wide">확인</button>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/vendors/base/vendors.bundle.js" type="text/javascript"></script>
+    <script src="../assets/demo/demo12/base/scripts.bundle.js" type="text/javascript"></script>
+    <script src="../js/bootstrap-datepicker.js" type="text/javascript"></script>
+</body>
+</html>
