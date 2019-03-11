@@ -1,21 +1,13 @@
 {
-  "name": "bootstrap_admin",
+  "name": "html",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lacey0905/bootstrap_admin.git"
-  },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/lacey0905/bootstrap_admin/issues"
-  },
-  "homepage": "https://github.com/lacey0905/bootstrap_admin#readme",
   "dependencies": {
     "gulp": "^4.0.0",
     "gulp-sass": "^4.0.2"

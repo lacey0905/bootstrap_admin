@@ -505,6 +505,17 @@ hr.hide {
     text-align: center;
     padding: 5px 0; }
 
+.modal_content .scroll table thead {
+  background-color: #f7f8fa;
+  border-top: 1px solid #ebedf2;
+  border-bottom: 1px solid #ebedf2; }
+  .modal_content .scroll table thead th {
+    border: 0; }
+
+.modal_content .scroll table td {
+  border-left: 0;
+  border-right: 0; }
+
 .table_wrap {
   width: 100%;
   overflow-x: auto;
@@ -569,7 +580,8 @@ hr.hide {
       color: #36a3f7;
       font-style: normal; }
   .table_wrap.box td {
-    border: 1px solid #ebedf2; }
+    border: 1px solid #ebedf2;
+    border-top: 0; }
     .table_wrap.box td em {
       color: #f4516c;
       font-style: normal; }
@@ -1038,3 +1050,174 @@ hr.hide {
 
 .date_wrap .datepicker {
   margin: 0 auto; }
+
+.m-accordion .m-accordion__item .m-accordion__item-body > span,
+.m-accordion .m-accordion__item .m-accordion__item-body .m-accordion__item-content {
+  padding: 10px; }
+
+.table_msg {
+  display: inline-block;
+  background-color: #5867dd;
+  color: #fff;
+  padding: 0 12px;
+  border-radius: 5px;
+  margin: 0 10px;
+  font-size: 12px;
+  font-weight: 400; }
+  .table_msg:first-child {
+    margin-left: 0; }
+
+.label_form .txt {
+  display: inline-block;
+  width: 80px;
+  vertical-align: top; }
+
+.label_form .m-input {
+  display: inline-block;
+  width: 140px;
+  vertical-align: top; }
+
+.label_form .btn {
+  height: 26px;
+  line-height: 26px;
+  padding: 0 5px;
+  vertical-align: top; }
+
+.m-accordion.m-accordion--default .m-accordion__item {
+  margin-bottom: 10px; }
+  .m-accordion.m-accordion--default .m-accordion__item .m-accordion__item-head {
+    padding: 8px 15px; }
+
+.tab_area .tit {
+  display: block;
+  font-size: 12px;
+  font-weight: 400 !important;
+  margin: 0;
+  background-color: #f7f8fa;
+  color: #575962;
+  padding: 5px 10px;
+  border: 1px solid #ebedf2; }
+
+.tab_area .tab_area_nav {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px; }
+  .tab_area .tab_area_nav li {
+    display: inline-block; }
+
+.modal_tab_item {
+  margin-bottom: 60px; }
+  .modal_tab_item .table_top {
+    margin: 20px 0; }
+    .modal_tab_item .table_top .controller {
+      top: -5px; }
+  .modal_tab_item .form_table th, .modal_tab_item .form_table td {
+    padding: 5px 10px !important;
+    border: 0;
+    border-top: 1px solid #ebedf2;
+    border-bottom: 1px solid #ebedf2;
+    font-size: 12px; }
+    .modal_tab_item .form_table th .btn, .modal_tab_item .form_table td .btn {
+      float: right; }
+
+.btn_select {
+  display: inline-block;
+  margin-left: 20px; }
+  .btn_select .select_list {
+    list-style-type: none;
+    padding: 0;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    margin-left: 10px; }
+    .btn_select .select_list li {
+      display: inline-block;
+      margin-right: 15px; }
+    .btn_select .select_list .btn_del {
+      display: inline-block;
+      font-size: 0;
+      margin-left: 5px;
+      border: solid 1px #f4516c !important;
+      text-decoration: none;
+      line-height: 0px; }
+      .btn_select .select_list .btn_del i {
+        display: block;
+        font-size: 12px; }
+
+.table_memo table {
+  border-top: 1px solid #f4f5f8; }
+  .table_memo table tr td:nth-child(2) {
+    width: 300px !important; }
+
+.table_memo td {
+  border: 0;
+  border-bottom: 1px solid #f4f5f8; }
+
+.table_memo_wrtie {
+  position: relative;
+  margin-bottom: 20px; }
+  .table_memo_wrtie textarea {
+    width: 90%; }
+  .table_memo_wrtie .btn {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: calc(10% - 5px); }
+
+.sel_b {
+  position: relative; }
+  .sel_b .tab_list {
+    width: 60%; }
+  .sel_b .opt_table {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 38%;
+    border-left: solid 1px #000;
+    padding-left: 20px; }
+
+.tab_list th, .tab_list td {
+  font-size: 12px;
+  padding: 8px 0 !important;
+  width: 100px !important;
+  vertical-align: middle !important; }
+  .tab_list th .btn, .tab_list td .btn {
+    padding: 2px 5px !important; }
+
+.tab_list .m-checkbox {
+  top: -5px;
+  padding-left: 18px; }
+
+.modal_table th {
+  width: 140px !important; }
+
+.modal_table .form_cont {
+  width: 300px; }
+
+.tab_table .red_dot {
+  color: #f4516c !important; }
+
+.tab_table .input-group-append a {
+  height: 26px;
+  line-height: 26px;
+  padding: 0 10px;
+  font-size: 12px; }
+
+.tab_table_nav {
+  list-style-type: none;
+  padding: 0; }
+  .tab_table_nav li {
+    display: inline-block;
+    border: solid 1px #5867dd;
+    margin-bottom: 5px; }
+    .tab_table_nav li.active a {
+      background-color: #5867dd;
+      color: #fff; }
+    .tab_table_nav li a {
+      display: block;
+      padding: 5px 10px;
+      text-decoration: none; }
+      .tab_table_nav li a:hover {
+        background-color: #5867dd;
+        color: #fff; }

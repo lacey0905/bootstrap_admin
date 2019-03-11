@@ -1,0 +1,926 @@
+<html>
+<head>
+    <title>팝업</title>
+    <link href="../assets/vendors/base/vendors.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/demo/demo12/base/style.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="../css/ui.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="modal_board">
+        <div class="modal_head">
+            <h2 class="title">상세화면</h2>
+            <button type="button" class="close">
+                <i class="la la-close"></i>
+            </button>
+        </div>
+        <div class="modal_content">
+
+            <div class="m-accordion m-accordion--default m-accordion--toggle-arrow" id="" role="tablist">                      
+                <!-- 요약 정보 1-->              
+                <div class="m-accordion__item m-accordion__item--danger">
+                    <div class="m-accordion__item-head collapsed" srole="tab" id="m_accordion_5_item_1_head" data-toggle="collapse" href="#m_accordion_5_item_1_body" aria-expanded="false">
+                        <span class="m-accordion__item-icon"><i class="fa flaticon-menu-button"></i></span>
+                        <span class="m-accordion__item-title">요약 정보 1</span>
+                        <span class="m-accordion__item-mode"></span>     
+                    </div>
+                    <div class="m-accordion__item-body collapse" id="m_accordion_5_item_1_body" role="tabpanel" aria-labelledby="m_accordion_5_item_1_head"> 
+                        <div class="m-accordion__item-content">
+                            <!-- 요약 정보 내용 -->
+                            <table class="form_table modal_table">
+                                <tbody>
+                                    <tr>
+                                        <th class="form_tit">진행상태/처리상태</th>
+                                        <td class="form_cont">
+                                            <span class="table_msg">발권중</span> / <span class="table_msg">예약완료</span>
+                                        </td>
+                                        <th class="form_tit">진행상태/처리상태</th>
+                                        <td class="form_cont">
+                                            <span class="table_msg">발권중</span> / <span class="table_msg">예약완료</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="form_tit">No.</th>
+                                        <td class="form_cont">12345</td>
+                                        <th class="form_tit">No.</th>
+                                        <td class="form_cont">12345</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="form_tit">구분</th>
+                                        <td class="form_cont">BTMS 예약 or CRS 예약</td>
+                                        <th class="form_tit">구분</th>
+                                        <td class="form_cont">BTMS 예약 or CRS 예약</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="form_tit">관리자</th>
+                                        <td class="form_cont">Name</td>
+                                        <th class="form_tit">관리자</th>
+                                        <td class="form_cont">Name</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="form_tit">취소일/취소처리자</th>
+                                        <td class="form_cont">-/-</td>
+                                        <th class="form_tit">취소일/취소처리자</th>
+                                        <td class="form_cont">-/-</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- //요약 정보 내용 -->
+                        </div>
+                    </div>
+                </div>
+                <!-- // 요약 정보 1-->   
+                
+                <!-- 요약 정보 2 -->              
+                <div class="m-accordion__item m-accordion__item--danger">
+                    <div class="m-accordion__item-head collapsed" srole="tab" id="m_accordion_5_item_2_head" data-toggle="collapse" href="#m_accordion_5_item_2_body" aria-expanded="false">
+                        <span class="m-accordion__item-icon"><i class="fa flaticon-menu-button"></i></span>
+                        <span class="m-accordion__item-title">요약 정보 2</span>
+                        <span class="m-accordion__item-mode"></span>     
+                    </div>
+                    <div class="m-accordion__item-body collapse" id="m_accordion_5_item_2_body" role="tabpanel" aria-labelledby="m_accordion_5_item_2_head"> 
+                        <div class="m-accordion__item-content">
+                            <!-- 요약 정보 내용 -->
+                            <table class="form_table modal_table">
+                                <tbody>
+                                    <tr>
+                                        <th class="form_tit">진행상태/처리상태</th>
+                                        <td class="form_cont">
+                                            <span class="table_msg">발권중</span> / <span class="table_msg">예약완료</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="form_tit">No.</th>
+                                        <td class="form_cont">12345</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="form_tit">구분</th>
+                                        <td class="form_cont">BTMS 예약 or CRS 예약</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="form_tit">관리자</th>
+                                        <td class="form_cont">Name</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="form_tit">취소일/취소처리자</th>
+                                        <td class="form_cont">-/-</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- //요약 정보 내용 -->
+                        </div>
+                    </div>
+                </div>
+                <!-- // 요약 정보 2 -->   
+
+                <!-- 탑승자 정보 --> 
+                <div class="m-accordion__item m-accordion__item--info">
+                    <div class="m-accordion__item-head collapsed" role="tab" id="m_accordion_5_item_3_head" data-toggle="collapse" href="#m_accordion_5_item_3_body" aria-expanded="false">
+                        <span class="m-accordion__item-icon"><i class="fa  flaticon-user-ok"></i></span>
+                        <span class="m-accordion__item-title">탑승자 정보</span>
+                                
+                        <span class="m-accordion__item-mode"></span>     
+                    </div>
+
+                    <div class="m-accordion__item-body collapse" id="m_accordion_5_item_3_body" role="tabpanel" aria-labelledby="m_accordion_5_item_3_head"> 
+                        <div class="m-accordion__item-content">
+                            <div class="tab_table">
+                                <ul class="tab_table_nav">
+                                    <li class="active"><a href="#">탑승자 1</a></li>
+                                    <li><a href="#">탑승자 2</a></li>
+                                    <li><a href="#">탑승자 3</a></li>
+                                </ul>
+                                <!-- 탑승자 정보 -->
+                                <table class="form_table modal_table">
+                                    <tbody>
+                                        <tr>
+                                            <th class="form_tit">거래처코드명 <i class="red_dot">*</i></th>
+                                            <td class="form_cont">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control m-input" name="">
+                                                    <div class="input-group-append"><a href="#" class="btn btn-primary">조회</a></div>
+                                                </div>
+                                            </td>
+                                            <th class="form_tit">한글이름 <i class="red_dot">*</i></th>
+                                            <td class="form_cont">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control m-input" name="">
+                                                    <div class="input-group-append"><a href="#" class="btn btn-primary">조회</a></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="form_tit">거래처명 <i class="red_dot">*</i></th>
+                                            <td class="form_cont">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control m-input" name="">
+                                                    <div class="input-group-append"><a href="#" class="btn btn-primary">조회</a></div>
+                                                </div>
+                                            </td>
+                                            <th class="form_tit">영문이름 <i class="red_dot">*</i></th>
+                                            <td class="form_cont">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control m-input" name="">
+                                                    <div class="input-group-append"><a href="#" class="btn btn-primary">조회</a></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="form_tit">탑승자 <i class="red_dot">*</i></th>
+                                            <td class="form_cont">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control m-input" name="">
+                                                    <div class="input-group-append"><a href="#" class="btn btn-primary">조회</a></div>
+                                                </div>
+                                            </td>
+                                            <th class="form_tit" rowspan="3">여권정보 <i class="red_dot">*</i></th>
+                                            <td class="form_cont">
+                                                <div class="label_form">
+                                                    <span class="txt"><i class="red_dot">*</i> 여권번호</span>
+                                                    <input type="text" class="form-control m-input">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="form_tit">휴대전화 <i class="red_dot">*</i></th>
+                                            <td class="form_cont">
+                                                <div class="inp_inline_wrap">
+                                                    <div class="inp_inline x3">
+                                                        <select class="form-control m-input" id="">
+                                                            <option>010</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="inp_inline x3">
+                                                        <input type="text" class="form-control m-input">
+                                                    </div>
+                                                    <div class="inp_inline x3">
+                                                        <input type="text" class="form-control m-input">
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="form_cont">
+                                                <div class="label_form">
+                                                    <span class="txt"><i class="red_dot">*</i> 여권만료일</span>
+                                                    <input type="text" class="form-control m-input">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="form_tit">회사전화</th>
+                                            <td class="form_cont">
+                                                <div class="inp_inline_wrap">
+                                                    <div class="inp_inline x3">
+                                                        <select class="form-control m-input" id="">
+                                                            <option>010</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="inp_inline x3">
+                                                        <input type="text" class="form-control m-input">
+                                                    </div>
+                                                    <div class="inp_inline x3">
+                                                        <input type="text" class="form-control m-input">
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="form_cont">
+                                                <div class="label_form">
+                                                    <span class="txt"><i class="red_dot">*</i> 국적</span>
+                                                    <input type="text" class="form-control m-input">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="form_tit">이메일 <i class="red_dot">*</i></th>
+                                            <td class="form_cont">
+                                                <input type="text" class="form-control m-input" name="">
+                                            </td>
+                                            <th class="form_tit">비자정보</th>
+                                            <td class="form_cont">
+                                                비자정보
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="form_tit">생년월일 <i class="red_dot">*</i></th>
+                                            <td class="form_cont">
+                                                <div class="label_form">
+                                                    <span class="txt">2019-03-02</span>
+                                                    <button type="button" class="btn btn-primary btn-sm">달력뷰</button>
+                                                </div>
+                                            </td>
+                                            <th class="form_tit">
+                
+                                            </th>
+                                            <td class="form_cont">
+                                                
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="form_tit">부서명/직위명</th>
+                                            <td class="form_cont">
+                                                <div class="inp_inline_wrap">
+                                                    <div class="inp_inline x2">
+                                                        <input type="text" class="form-control m-input">
+                                                    </div>
+                                                    <div class="inp_inline txt">/</div>
+                                                    <div class="inp_inline x2">
+                                                        <input type="text" class="form-control m-input">
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <th class="form_tit">
+                                                
+                                            </th>
+                                            <td class="form_cont">
+                                                
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <!-- //탑승자 정보 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+                <!-- //탑승자 정보 --> 
+
+                <!-- 예약정보 --> 
+                <div class="m-accordion__item m-accordion__item--brand">
+                    <div class="m-accordion__item-head collapsed" role="tab" id="m_accordion_5_item_4_head" data-toggle="collapse" href="#m_accordion_5_item_4_body" aria-expanded="false">
+                        <span class="m-accordion__item-icon"><i class="fa  flaticon-alert-2"></i></span>
+                        <span class="m-accordion__item-title">예약정보</span>
+                                
+                        <span class="m-accordion__item-mode"></span>     
+                    </div>
+
+                    <div class="m-accordion__item-body collapse" id="m_accordion_5_item_4_body" role="tabpanel" aria-labelledby="m_accordion_5_item_4_head"> 
+                        <div class="m-accordion__item-content">
+                            <div class="tab_table">
+                                <!-- 예약 정보 -->
+                                <table class="form_table modal_table">
+                                    <tbody>
+                                        <tr>
+                                            <th class="form_tit">지역 구분</th>
+                                            <td class="form_cont">
+                                                <select class="form-control m-input" id="">
+                                                    <option>전체</option>
+                                                </select>
+                                            </td>
+                                            <th class="form_tit">구간</th>
+                                            <td class="form_cont">
+                                                <select class="form-control m-input" id="">
+                                                    <option>전체</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="form_tit">항공사</th>
+                                            <td class="form_cont">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control m-input" name="" value="7C">
+                                                    <div class="input-group-append"><a href="#" class="btn btn-primary">조회</a></div>
+                                                </div>
+                                            </td>
+                                            <th class="form_tit">PNR / 인원</th>
+                                            <td class="form_cont">1234-1234 / 1</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="form_tit">출발지</th>
+                                            <td class="form_cont">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control m-input" name="" value="ICN">
+                                                    <div class="input-group-append"><a href="#" class="btn btn-primary">조회</a></div>
+                                                </div>
+                                            </td>
+                                            <th class="form_tit">출발일</th>
+                                            <td class="form_cont">
+                                                <div class="label_form">
+                                                    <span class="txt">2019-03-02</span>
+                                                    <button type="button" class="btn btn-primary btn-sm">달력뷰</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="form_tit">목적지</th>
+                                            <td class="form_cont">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control m-input" name="" value="TPE">
+                                                    <div class="input-group-append"><a href="#" class="btn btn-primary">조회</a></div>
+                                                </div>
+                                            </td>
+                                            <th class="form_tit">귀국일</th>
+                                            <td class="form_cont">
+                                                <div class="label_form">
+                                                    <span class="txt">2019-03-02</span>
+                                                    <button type="button" class="btn btn-primary btn-sm">달력뷰</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="form_tit">좌석상태</th>
+                                            <td class="form_cont">
+                                                <select class="form-control m-input" id="">
+                                                    <option>확약</option>
+                                                </select>
+                                            </td>
+                                            <th class="form_tit">TL일자</th>
+                                            <td class="form_cont">
+                                                <div class="label_form">
+                                                    <span class="txt">2019-03-02</span>
+                                                    <button type="button" class="btn btn-primary btn-sm">달력뷰</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="form_tit">CLS/BCLS</th>
+                                            <td class="form_cont">
+                                                <select class="form-control m-input" id="">
+                                                    <option>이코노미</option>
+                                                </select>
+                                            </td>
+                                            <th class="form_tit">CRS 구분</th>
+                                            <td class="form_cont">AMADEUS</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="form_tit">수화물 규정</th>
+                                            <td class="form_cont">02P</td>
+                                            <th class="form_tit"><span style="text-decoration:line-through;">MODE</span></th>
+                                            <td class="form_cont"><span style="text-decoration:line-through;">[E][C][D]</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <!-- //예약 정보 -->
+                            </div>
+                        </div>
+                    </div>                       
+                </div>
+                <!-- //예약정보 -->    
+                <div class="tab_table">
+                    <ul class="tab_table_nav">
+                        <li class="active"><a href="#">티켓정보</a></li>
+                        <li><a href="#">입금환불내역</a></li>
+                        <li><a href="#">판매요금</a></li>
+                        <li><a href="#">결제정보</a></li>
+                        <li><a href="#">메모</a></li>
+                    </ul>
+                    <!-- 티켓 정보 -->    
+                    <div class="modal_tab_item">
+                        <div class="tab_area">
+                            <strong class="tit">결제수단</strong>
+                            <ul class="tab_area_nav">
+                                <li><button type="button" class="btn btn-secondary btn-sm">법인PG</button></li>
+                                <li><button type="button" class="btn btn-secondary btn-sm">삼성물산PG</button></li>
+                                <li><button type="button" class="btn btn-secondary btn-sm">상용PG</button></li>
+                                <li><button type="button" class="btn btn-secondary btn-sm">직가맹PG</button></li>
+                                <li><button type="button" class="btn btn-secondary btn-sm">은행입금</button></li>
+                                <li><button type="button" class="btn btn-secondary btn-sm">SK상품권</button></li>
+                                <li><button type="button" class="btn btn-secondary btn-sm">인보이스 생성</button></li>
+                            </ul>
+                        </div>
+                        <div class="tab_list">
+                            <div class="table_scroll_x">
+                                <table class="table table_middle">
+                                    <thead class="thead-inverse">
+                                        <tr>
+                                            <th>
+                                                <label class="m-checkbox">
+                                                    <input type="checkbox">
+                                                    <span></span>
+                                                </label>
+                                            </th>
+                                            <th>티켓번호</th>
+                                            <th>발권일</th>
+                                            <th>환불일</th>
+                                            <th>VOID</th>
+                                            <th>영문이름</th>
+                                            <th>FARE</th>
+                                            <th>DC</th>
+                                            <th>NET</th>
+                                            <th>TAX</th>
+                                            <th>발권금액</th>
+                                            <th>입금액</th>
+                                            <th>취급수수료</th>
+                                            <th>판매금액</th>
+                                            <th>카드발권</th>
+                                            <th>현금발권</th>
+                                            <th>결제총액</th>
+                                            <th>미수액</th>
+                                            <th>인보이스</th>
+                                            <th>재발권여부</th>
+                                            <th>오리지널티켓번호</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">
+                                                <label class="m-checkbox">
+                                                    <input type="checkbox">
+                                                    <span></span>
+                                                </label>
+                                            </th>
+                                            <td>0000000</td>
+                                            <td>19-03-03</td>
+                                            <td>-</td>
+                                            <td>NORM</td>
+                                            <td>HONG GILDONG</td>
+                                            <td>00000</td>
+                                            <td>00000</td>
+                                            <td>00000</td>
+                                            <td>00000</td>
+                                            <td>00000</td>
+                                            <td>0</td>
+                                            <td>00000</td>
+                                            <td>00000</td>
+                                            <td>00000</td>
+                                            <td>0</td>
+                                            <td>00000</td>
+                                            <td>00000</td>
+                                            <td><button type="button" class="btn btn-primary btn-sm m-btn m-btn--custom">완료</button></td>
+                                            <td>N</td>
+                                            <td>12341234</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <label class="m-checkbox">
+                                                    <input type="checkbox">
+                                                    <span></span>
+                                                </label>
+                                            </th>
+                                            <td>0000000</td>
+                                            <td>19-03-03</td>
+                                            <td>-</td>
+                                            <td>NORM</td>
+                                            <td>HONG GILDONG</td>
+                                            <td>00000</td>
+                                            <td>00000</td>
+                                            <td>00000</td>
+                                            <td>00000</td>
+                                            <td>00000</td>
+                                            <td>0</td>
+                                            <td>00000</td>
+                                            <td>00000</td>
+                                            <td>00000</td>
+                                            <td>0</td>
+                                            <td>00000</td>
+                                            <td>00000</td>
+                                            <td>N</td>
+                                            <td>N</td>
+                                            <td>12341234</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="table_top">
+                                <div class="controller">
+                                    <div class="inp_inline_wrap">
+                                        <div class="inp_inline">
+                                            <button type="button" class="btn btn-primary btn-sm">엑셀다운로드</button>
+                                        </div>
+                                        <div class="inp_inline">
+                                            <button type="button" class="btn btn-secondary btn-sm">기타처리버튼</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //티켓 정보 -->
+                    <ul class="tab_table_nav">
+                        <li><a href="#">티켓정보</a></li>
+                        <li class="active"><a href="#">입금환불내역</a></li>
+                        <li><a href="#">판매요금</a></li>
+                        <li><a href="#">결제정보</a></li>
+                        <li><a href="#">메모</a></li>
+                    </ul>
+                    <!-- 입금환불내역 -->    
+                    <div class="modal_tab_item">
+                        <div class="table_top">
+                            <span class="table_count">총 판매요금 : 000,000원 (유류할증료 및 TAX 포함)</span>
+                            <div class="controller">
+                                <div class="inp_inline_wrap">
+                                    <div class="inp_inline">
+                                        <button type="button" class="btn btn-primary btn-sm">엑셀다운로드</button>
+                                    </div>
+                                    <div class="inp_inline">
+                                        <button type="button" class="btn btn-secondary btn-sm">기타처리버튼</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab_list">
+                            <div class="table_scroll_x">
+                                <table class="table table_middle">
+                                    <thead class="thead-inverse">
+                                        <tr>
+                                            <th>
+                                                <label class="m-checkbox">
+                                                    <input type="checkbox">
+                                                    <span></span>
+                                                </label>
+                                            </th>
+                                            <th>입금일</th>
+                                            <th>구분</th>
+                                            <th>입금구분</th>
+                                            <th>PG구분</th>
+                                            <th>MID</th>
+                                            <th>세부구분</th>
+                                            <th>계좌/카드</th>
+                                            <th>승인번호</th>
+                                            <th>금액</th>
+                                            <th>티켓번호</th>
+                                            <th>항공요금구분</th>
+                                            <th>입금고객</th>
+                                            <th>결의일</th>
+                                            <th>결의번호</th>
+                                            <th>지급일</th>
+                                            <th>등록일</th>
+                                            <th>전표출력</th>
+                                            <th>승일취소</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">
+                                                <label class="m-checkbox">
+                                                    <input type="checkbox">
+                                                    <span></span>
+                                                </label>
+                                            </th>
+                                            <td>19-03-03</td>
+                                            <td>입금</td>
+                                            <td>카드</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>카드발권</td>
+                                            <td>계좌번호</td>
+                                            <td>승인번호</td>
+                                            <td>000,000</td>
+                                            <td>티켓번호</td>
+                                            <td>항공료</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <label class="m-checkbox">
+                                                    <input type="checkbox">
+                                                    <span></span>
+                                                </label>
+                                            </th>
+                                            <td>19-03-03</td>
+                                            <td>입금</td>
+                                            <td>SK상품권</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>카드발권</td>
+                                            <td>계좌번호</td>
+                                            <td>승인번호</td>
+                                            <td>000,000</td>
+                                            <td>티켓번호</td>
+                                            <td>항공료</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //입금환불내역 -->
+                    <ul class="tab_table_nav">
+                        <li><a href="#">티켓정보</a></li>
+                        <li><a href="#">입금환불내역</a></li>
+                        <li class="active"><a href="#">판매요금</a></li>
+                        <li><a href="#">결제정보</a></li>
+                        <li><a href="#">메모</a></li>
+                    </ul>
+                    <!-- 판매요금 1 -->    
+                    <div class="modal_tab_item">
+                        <div class="table_top">
+                            <span class="table_count">총 판매요금 : 000,000원 (유류할증료 및 TAX 포함)</span>
+                        </div>
+                        <div class="tab_list">
+                            <div class="table_scroll_x">
+                                <table class="table table_middle">
+                                    <thead class="thead-inverse">
+                                        <tr>
+                                            <th>판매항목</th>
+                                            <th>요금구분</th>
+                                            <th>구분</th>
+                                            <th>판매금액</th>
+                                            <th>인원</th>
+                                            <th>합계금액</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>항공비</td>
+                                            <td>-</td>
+                                            <td>성인</td>
+                                            <td>000,000</td>
+                                            <td>00</td>
+                                            <td>000,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>항공비</td>
+                                            <td>-</td>
+                                            <td>성인</td>
+                                            <td>000,000</td>
+                                            <td>00</td>
+                                            <td>000,000</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //판매요금 1 -->
+                    <!-- 판매요금 2 -->    
+                    <div class="modal_tab_item sel_b">
+                        <div class="table_top">
+                            <span class="table_count">총 판매요금 : 000,000원 (유류할증료 및 TAX 포함)</span>
+                        </div>
+                        <div class="tab_list">
+                            <div class="table_scroll_x">
+                                <table class="table table_middle">
+                                    <thead class="thead-inverse">
+                                        <tr>
+                                            <th>판매항목</th>
+                                            <th>요금구분</th>
+                                            <th>구분</th>
+                                            <th>판매금액</th>
+                                            <th>인원</th>
+                                            <th>합계금액</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>항공비</th>
+                                            <td>-</td>
+                                            <td>성인</td>
+                                            <td>000,000</td>
+                                            <td>00</td>
+                                            <td>000,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>항공비</td>
+                                            <td>-</td>
+                                            <td>성인</td>
+                                            <td>000,000</td>
+                                            <td>00</td>
+                                            <td>000,000</td>
+                                        </tr>
+                                        <tr>
+                                            <th>항공비</th>
+                                            <td>-</td>
+                                            <td>성인</td>
+                                            <td>000,000</td>
+                                            <td>00</td>
+                                            <td>000,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>항공비</td>
+                                            <td>-</td>
+                                            <td>성인</td>
+                                            <td>000,000</td>
+                                            <td>00</td>
+                                            <td>000,000</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tab_list opt_table">
+                            <div class="modal_form">
+                                <table class="form_table">
+                                    <tbody>
+                                        <tr>
+                                            <th class="form_tit">항공권료</th>
+                                            <td class="form_cont">000,000</td>
+                                            <td class="form_cont">
+                                                <button type="button" class="btn btn-primary btn-sm">영수증</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="form_tit">발권수수료</th>
+                                            <td class="form_cont">000,000</td>
+                                            <td class="form_cont">
+                                                <button type="button" class="btn btn-primary btn-sm">영수증</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="form_tit">결제총액</th>
+                                            <td class="form_cont">000,000</td>
+                                            <td class="form_cont">
+                                                <button type="button" class="btn btn-primary btn-sm">영수증</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //판매요금 2 -->
+                    <ul class="tab_table_nav">
+                        <li><a href="#">티켓정보</a></li>
+                        <li><a href="#">입금환불내역</a></li>
+                        <li><a href="#">판매요금</a></li>
+                        <li class="active"><a href="#">결제정보</a></li>
+                        <li><a href="#">메모</a></li>
+                    </ul>
+                    <!-- 결제정보 -->    
+                    <div class="modal_tab_item">
+                        <div class="table_top">
+                            <span class="table_count">총 판매요금 : 000,000원 (유류할증료 및 TAX 포함)</span>
+                        </div>
+                        <div class="tab_list">
+                            <div class="modal_form">
+                                <table class="form_table">
+                                    <tbody>
+                                        <tr>
+                                            <th class="form_tit">항공권료</th>
+                                            <td class="form_cont">000,000</td>
+                                            <td class="form_cont">
+                                                <button type="button" class="btn btn-primary btn-sm">영수증</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="form_tit">발권수수료</th>
+                                            <td class="form_cont">000,000</td>
+                                            <td class="form_cont">
+                                                <button type="button" class="btn btn-primary btn-sm">영수증</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="form_tit">결제총액</th>
+                                            <td class="form_cont">000,000</td>
+                                            <td class="form_cont">
+                                                <button type="button" class="btn btn-primary btn-sm">영수증</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //결제정보 -->
+                    <ul class="tab_table_nav">
+                        <li><a href="#">티켓정보</a></li>
+                        <li><a href="#">입금환불내역</a></li>
+                        <li><a href="#">판매요금</a></li>
+                        <li><a href="#">결제정보</a></li>
+                        <li class="active"><a href="#">메모</a></li>
+                    </ul>
+                    <!-- 메모 -->    
+                    <div class="modal_tab_item table_memo">
+                        <div class="table_memo_wrtie">
+                            <textarea class="form-control m-input" id="" rows="3"></textarea>
+                            <button type="button" class="btn btn-primary">등록</button>
+                        </div>
+                        <div class="tab_list">
+                            <div class="table_scroll_y">
+                                <table class="table table_middle">
+                                    <tbody>
+                                        <tr>
+                                            <td>2019-03-03</td>
+                                            <td>메모 입력한 내용이 표시 됩니다.메모 입력한 내용이 표시 됩니다.</td>
+                                            <td>작성자명</td>
+                                            <td>
+                                                <button type="button" class="btn btn-secondary btn-sm">삭제</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2019-03-03</td>
+                                            <td>메모 입력한 내용이 표시 됩니다.</td>
+                                            <td>작성자명</td>
+                                            <td>
+                                                <button type="button" class="btn btn-secondary btn-sm">삭제</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2019-03-03</td>
+                                            <td>메모 입력한 내용이 표시 됩니다.메모 입력한 내용이 표시 됩니다.</td>
+                                            <td>작성자명</td>
+                                            <td>
+                                                <button type="button" class="btn btn-secondary btn-sm">삭제</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2019-03-03</td>
+                                            <td>메모 입력한 내용이 표시 됩니다.</td>
+                                            <td>작성자명</td>
+                                            <td>
+                                                <button type="button" class="btn btn-secondary btn-sm">삭제</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2019-03-03</td>
+                                            <td>메모 입력한 내용이 표시 됩니다.메모 입력한 내용이 표시 됩니다.</td>
+                                            <td>작성자명</td>
+                                            <td>
+                                                <button type="button" class="btn btn-secondary btn-sm">삭제</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2019-03-03</td>
+                                            <td>메모 입력한 내용이 표시 됩니다.</td>
+                                            <td>작성자명</td>
+                                            <td>
+                                                <button type="button" class="btn btn-secondary btn-sm">삭제</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2019-03-03</td>
+                                            <td>메모 입력한 내용이 표시 됩니다.메모 입력한 내용이 표시 됩니다.</td>
+                                            <td>작성자명</td>
+                                            <td>
+                                                <button type="button" class="btn btn-secondary btn-sm">삭제</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2019-03-03</td>
+                                            <td>메모 입력한 내용이 표시 됩니다.</td>
+                                            <td>작성자명</td>
+                                            <td>
+                                                <button type="button" class="btn btn-secondary btn-sm">삭제</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- 페이징 -->
+                            <div class="m-datatable m-datatable--default m-datatable--brand m-datatable--loaded pager_center">
+                                <div class="m-datatable__pager m-datatable--paging-loaded clearfix">
+                                    <ul class="m-datatable__pager-nav">
+                                        <li><a title="First" class="m-datatable__pager-link m-datatable__pager-link--first m-datatable__pager-link--disabled" data-page="1" disabled="disabled"><i class="la la-angle-double-left"></i></a></li>
+                                        <li><a title="Previous" class="m-datatable__pager-link m-datatable__pager-link--prev m-datatable__pager-link--disabled" data-page="1" disabled="disabled"><i class="la la-angle-left"></i></a></li>
+                                        <li><a class="m-datatable__pager-link m-datatable__pager-link-number m-datatable__pager-link--active" data-page="1" title="1">1</a></li>
+                                        <li><a class="m-datatable__pager-link m-datatable__pager-link-number" data-page="1" title="1">2</a></li>
+                                        <li><a class="m-datatable__pager-link m-datatable__pager-link-number" data-page="1" title="1">3</a></li>
+                                        <li><a class="m-datatable__pager-link m-datatable__pager-link-number" data-page="1" title="1">4</a></li>
+                                        <li><a title="Next" class="m-datatable__pager-link m-datatable__pager-link--next" data-page="2"><i class="la la-angle-right"></i></a></li>
+                                        <li><a title="Last" class="m-datatable__pager-link m-datatable__pager-link--last" data-page="10"><i class="la la-angle-double-right"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- // -->
+                        </div>
+                    </div>
+                    <!-- //메모 -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/vendors/base/vendors.bundle.js" type="text/javascript"></script>
+    <script src="../assets/demo/demo12/base/scripts.bundle.js" type="text/javascript"></script>
+    <script src="../js/bootstrap-datepicker.js" type="text/javascript"></script>
+</body>
+</html>
