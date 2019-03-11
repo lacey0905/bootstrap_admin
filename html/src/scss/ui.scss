@@ -70,6 +70,50 @@ select.form-control {
     }
 }
 
+.autoComplete {
+    position: relative;
+    width:100%;
+    .search_icon {
+        position: absolute;
+        top:12px;
+        right:12px;
+    }
+    .auto_input {
+        display:inline-block;
+        position: relative;
+        width:250px;
+        .m-input {
+            padding-right:35px;
+        }
+    }
+    .text {
+        margin-left:15px;
+        display:inline-block;
+        i {
+            position: relative;
+            top:2px;
+        }
+    }
+    .result {
+        position: absolute;
+        top:39px;
+        width:250px;
+        min-height:50px;
+        border: 1px solid #ced4da;
+        background-color:#fff;
+        z-index:300;
+        .list {
+            padding:10px;
+            list-style-type: none;
+            margin:0;
+            line-height:24px;
+            a {
+                color:#333;
+            }
+        }
+    }
+}
+
 
 .nav_tab_link {
     width:100%;
@@ -527,6 +571,18 @@ hr {
         vertical-align:middle;
         text-align:center;
         // padding:5px 0;
+    }
+}
+
+.table_scroll_x, 
+.table_scroll_y,
+.table_scroll_xy,
+.table_wrap {
+    tbody {
+        tr:hover th,
+        tr:hover td {
+            background-color:#f4f5f8;
+        }
     }
 }
 
@@ -1290,6 +1346,12 @@ hr {
     }
 }
 
+.date_x2 {
+    display:inline-block;
+    vertical-align:top;
+    margin:0 10px 20px;
+}
+
 .invoice_head {
     margin-bottom:50px;
     .logo {
@@ -1314,5 +1376,11 @@ hr {
             font-size:13px;
             margin-left:5px;
         }
+    }
+}
+
+.date_wrap {
+    .datepicker {
+        margin:0 auto;
     }
 }

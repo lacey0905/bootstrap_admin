@@ -51,6 +51,41 @@ select.form-control {
     font-weight: 400;
     color: #7b7e8a; }
 
+.autoComplete {
+  position: relative;
+  width: 100%; }
+  .autoComplete .search_icon {
+    position: absolute;
+    top: 12px;
+    right: 12px; }
+  .autoComplete .auto_input {
+    display: inline-block;
+    position: relative;
+    width: 250px; }
+    .autoComplete .auto_input .m-input {
+      padding-right: 35px; }
+  .autoComplete .text {
+    margin-left: 15px;
+    display: inline-block; }
+    .autoComplete .text i {
+      position: relative;
+      top: 2px; }
+  .autoComplete .result {
+    position: absolute;
+    top: 39px;
+    width: 250px;
+    min-height: 50px;
+    border: 1px solid #ced4da;
+    background-color: #fff;
+    z-index: 300; }
+    .autoComplete .result .list {
+      padding: 10px;
+      list-style-type: none;
+      margin: 0;
+      line-height: 24px; }
+      .autoComplete .result .list a {
+        color: #333; }
+
 .nav_tab_link {
   width: 100%;
   padding: 0;
@@ -399,6 +434,16 @@ hr.hide {
 .table_middle th, .table_middle td {
   vertical-align: middle;
   text-align: center; }
+
+.table_scroll_x tbody tr:hover th,
+.table_scroll_x tbody tr:hover td,
+.table_scroll_y tbody tr:hover th,
+.table_scroll_y tbody tr:hover td,
+.table_scroll_xy tbody tr:hover th,
+.table_scroll_xy tbody tr:hover td,
+.table_wrap tbody tr:hover th,
+.table_wrap tbody tr:hover td {
+  background-color: #f4f5f8; }
 
 .table_scroll_x {
   width: 100%;
@@ -967,6 +1012,11 @@ hr.hide {
       padding: 0 8px;
       height: 25px; }
 
+.date_x2 {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 10px 20px; }
+
 .invoice_head {
   margin-bottom: 50px; }
   .invoice_head .logo {
@@ -985,3 +1035,6 @@ hr.hide {
     font-weight: 400;
     font-size: 13px;
     margin-left: 5px; }
+
+.date_wrap .datepicker {
+  margin: 0 auto; }
