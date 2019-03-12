@@ -532,7 +532,7 @@ hr.hide {
       width: 100%;
       padding-right: 20px; }
     .table_wrap.scroll table tbody {
-      overflow-y: auto;
+      overflow-y: scroll;
       overflow-x: hidden;
       float: left;
       width: 100%;
@@ -540,6 +540,8 @@ hr.hide {
     .table_wrap.scroll table tr {
       display: table;
       width: 100%; }
+      .table_wrap.scroll table tr th, .table_wrap.scroll table tr td {
+        width: 25%; }
   .table_wrap table {
     width: 100%;
     overflow-x: auto;
@@ -685,7 +687,8 @@ hr.hide {
     position: absolute;
     top: 10px;
     right: 15px;
-    color: #fff !important; }
+    color: #fff !important;
+    line-height: 16px; }
 
 .modal_board .modal_content {
   padding: 15px; }
@@ -1029,6 +1032,9 @@ hr.hide {
   vertical-align: top;
   margin: 0 10px 20px; }
 
+.invoice {
+  padding-top: 40px; }
+
 .invoice_head {
   margin-bottom: 50px; }
   .invoice_head .logo {
@@ -1221,3 +1227,57 @@ hr.hide {
       .tab_table_nav li a:hover {
         background-color: #5867dd;
         color: #fff; }
+
+.profile_icon .icon {
+  background-color: #fff;
+  padding: 5px;
+  font-size: 24px;
+  color: #333; }
+
+.profile_icon .txt {
+  display: inline-block;
+  line-height: 34px;
+  vertical-align: top;
+  margin-left: 10px;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 0.075em; }
+
+.m-dropdown .m-dropdown__wrapper .m-dropdown__header {
+  padding: 10px; }
+  .m-dropdown .m-dropdown__wrapper .m-dropdown__header .m-card-user__name {
+    line-height: 30px; }
+
+.m-footer__copyright {
+  display: block;
+  width: 1000px !important; }
+  .m-footer__copyright .addr_item {
+    display: inline-block; }
+    .m-footer__copyright .addr_item:first-child:before {
+      content: none; }
+    .m-footer__copyright .addr_item:before {
+      content: "|";
+      margin: 0 5px; }
+  .m-footer__copyright .copy {
+    display: block;
+    font-weight: 400 !important;
+    line-height: 24px;
+    opacity: 0.5; }
+
+.m-footer--push.m-aside-left--enabled:not(.m-footer--fixed) .m-aside-right, .m-footer--push.m-aside-left--enabled:not(.m-footer--fixed) .m-wrapper {
+  margin-bottom: 80px; }
+
+.m-footer--push.m-aside-left--enabled:not(.m-footer--fixed) .m-footer {
+  margin-top: -80px; }
+
+.m-footer {
+  padding-top: 12px;
+  height: 80px; }
+
+.m-stack__item--left {
+  overflow: hidden; }
+
+@media (max-width: 1024px) {
+  .m-footer__copyright {
+    display: block;
+    width: 100% !important; } }

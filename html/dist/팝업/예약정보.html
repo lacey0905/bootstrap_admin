@@ -16,14 +16,20 @@
         <div class="modal_content">
 
             <div class="m-accordion m-accordion--default m-accordion--toggle-arrow" id="" role="tablist">                      
-                <!-- 요약 정보 1-->              
+                <!-- 요약 정보 1-->  
+                <!--
+                    [탭 열어 놓기 방법]
+                    버튼 : class="m-accordion__item-head collapsed" => collapsed 제거
+                    버튼 : aria-expanded="false" => true
+                    내용 : class="m-accordion__item-body collapse" => show 추가
+                -->
                 <div class="m-accordion__item m-accordion__item--danger">
-                    <div class="m-accordion__item-head collapsed" srole="tab" id="m_accordion_5_item_1_head" data-toggle="collapse" href="#m_accordion_5_item_1_body" aria-expanded="false">
+                    <div class="m-accordion__item-head" srole="tab" id="m_accordion_5_item_1_head" data-toggle="collapse" href="#m_accordion_5_item_1_body" aria-expanded="true">
                         <span class="m-accordion__item-icon"><i class="fa flaticon-menu-button"></i></span>
                         <span class="m-accordion__item-title">요약 정보 1</span>
                         <span class="m-accordion__item-mode"></span>     
                     </div>
-                    <div class="m-accordion__item-body collapse" id="m_accordion_5_item_1_body" role="tabpanel" aria-labelledby="m_accordion_5_item_1_head"> 
+                    <div class="m-accordion__item-body collapse show" id="m_accordion_5_item_1_body" role="tabpanel" aria-labelledby="m_accordion_5_item_1_head"> 
                         <div class="m-accordion__item-content">
                             <!-- 요약 정보 내용 -->
                             <table class="form_table modal_table">

@@ -706,15 +706,19 @@ hr {
                 padding-right:20px;
             }
             tbody {
-                overflow-y:auto; 
+                overflow-y:scroll; 
                 overflow-x:hidden; 
                 float:left; 
+                // width:calc(100% - 20px);
                 width:100%;
                 height:300px;
             }
             tr {
                 display:table; 
                 width:100%;
+                th, td {
+                    width:25%;
+                }
             }
         }
     }
@@ -916,6 +920,7 @@ hr {
             top:10px;
             right:15px;
             color:#fff !important;
+            line-height: 16px;
         }
     }
     .modal_content {
@@ -1372,6 +1377,9 @@ hr {
     margin:0 10px 20px;
 }
 
+.invoice {
+    padding-top:40px;
+}
 .invoice_head {
     margin-bottom:50px;
     .logo {
@@ -1626,5 +1634,78 @@ hr {
                 color:#fff;
             }
         }
+    }
+}
+
+
+.profile_icon {
+    .icon {
+        background-color:#fff;
+        padding:5px;
+        font-size:24px;
+        color:#333;
+    }
+    .txt {
+        display:inline-block;
+        line-height:34px;   
+        vertical-align:top;
+        margin-left:10px;
+        color:#fff;
+        font-weight:400;
+        letter-spacing:0.075em;
+    }
+}
+
+.m-dropdown .m-dropdown__wrapper .m-dropdown__header {
+    padding:10px;
+    .m-card-user__name {
+        line-height:30px;
+    }
+}
+
+.m-footer__copyright {
+    display:block;
+    width:1000px !important;
+    .addr_item {
+        display:inline-block;
+        &:first-child {
+            &:before {
+                content:none;
+            }
+        }
+        &:before {
+            content:"|";
+            margin:0 5px;
+        }
+    }
+    .copy {
+        display:block;
+        font-weight:400 !important;
+        line-height:24px;
+        opacity:0.5;
+    }
+}
+
+.m-footer--push.m-aside-left--enabled:not(.m-footer--fixed) .m-aside-right, .m-footer--push.m-aside-left--enabled:not(.m-footer--fixed) .m-wrapper {
+    margin-bottom:80px;
+}
+.m-footer--push.m-aside-left--enabled:not(.m-footer--fixed) .m-footer {
+    margin-top:-80px;
+}
+
+.m-footer {
+    padding-top:12px;
+    height:80px;
+}
+
+
+.m-stack__item--left {
+    overflow: hidden;
+}
+
+@media (max-width: 1024px) {
+    .m-footer__copyright {
+        display:block;
+        width:100% !important;
     }
 }
