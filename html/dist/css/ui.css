@@ -1243,6 +1243,18 @@ hr.hide {
   font-weight: 400;
   letter-spacing: 0.075em; }
 
+.profile_icon .fa {
+  display: inline-block;
+  color: #fff;
+  font-size: 20px;
+  vertical-align: middle;
+  line-height: 34px;
+  margin-left: 10px;
+  margin-top: -6px; }
+
+.m-dropdown--open .profile_icon .fa:before {
+  content: "\f106"; }
+
 .m-dropdown .m-dropdown__wrapper .m-dropdown__header {
   padding: 10px; }
   .m-dropdown .m-dropdown__wrapper .m-dropdown__header .m-card-user__name {
