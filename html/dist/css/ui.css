@@ -54,6 +54,17 @@ select.form-control {
 .autoComplete {
   position: relative;
   width: 100%; }
+  .autoComplete.add_select {
+    font-size: 0; }
+    .autoComplete.add_select .control_search_select {
+      display: inline-block;
+      width: 39%; }
+    .autoComplete.add_select .auto_input {
+      width: 59%;
+      margin-left: 2%; }
+    .autoComplete.add_select .result {
+      right: 0;
+      width: 59%; }
   .autoComplete .search_icon {
     position: absolute;
     top: 12px;
@@ -77,13 +88,14 @@ select.form-control {
     min-height: 50px;
     border: 1px solid #ced4da;
     background-color: #fff;
-    z-index: 300; }
+    z-index: 1000; }
     .autoComplete .result .list {
       padding: 10px;
       list-style-type: none;
       margin: 0;
       line-height: 24px; }
       .autoComplete .result .list a {
+        font-size: 14px;
         color: #333; }
 
 .nav_tab_link {
@@ -881,16 +893,17 @@ hr.hide {
   padding: 10px;
   background-color: #f7f8fa;
   border-bottom: solid 1px #000;
-  overflow: hidden;
   margin-bottom: 20px; }
   .modal_change .control .contorl_select {
+    display: inline-block;
     width: 25%;
-    float: left; }
+    vertical-align: top; }
   .modal_change .control .control_search {
+    display: inline-block;
     width: 38%;
     margin-left: 2%;
-    float: left;
-    overflow: hidden; }
+    overflow: hidden;
+    vertical-align: top; }
     .modal_change .control .control_search .control_search_select {
       width: 40%;
       float: left; }
@@ -899,9 +912,10 @@ hr.hide {
       margin-left: 2%;
       float: left; }
   .modal_change .control .control_input {
-    width: 33%;
+    display: inline-block;
+    width: 35%;
     margin-left: 2%;
-    float: left; }
+    vertical-align: top; }
     .modal_change .control .control_input .control_txt_input {
       width: 60%;
       float: left; }

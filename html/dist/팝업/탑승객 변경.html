@@ -21,11 +21,22 @@
                             <option>타이드스퀘어</option>
                         </select>
                     </div>
-                    <div class="control_search">
-                        <select class="form-control m-input control_search_select" id="">
-                            <option>본사</option>
-                        </select>
-                        <input type="text" class="form-control m-input control_search_input">
+                    <div class="control_input">
+                        <div class="autoComplete add_select">
+                            <select class="form-control m-input control_search_select" id="">
+                                <option>본사</option>
+                            </select>
+                            <div class="auto_input">
+                                <input type="text" class="form-control m-input" value="대">
+                                <i class="la la-search search_icon"></i>
+                            </div>
+                            <div class="result">
+                                <ul class="list">
+                                    <li class="item"><a href="#">대한민국</a></li>
+                                    <li class="item"><a href="#">대만</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                     <div class="control_input">
                         <input type="text" class="form-control m-input control_txt_input" placeholder="이름">

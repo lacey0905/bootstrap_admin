@@ -73,6 +73,21 @@ select.form-control {
 .autoComplete {
     position: relative;
     width:100%;
+    &.add_select {
+        font-size:0;
+        .control_search_select {
+            display:inline-block;
+            width:39%;
+        }
+        .auto_input {
+            width:59%;
+            margin-left:2%;
+        }
+        .result {
+            right:0;
+            width:59%;
+        }
+    }
     .search_icon {
         position: absolute;
         top:12px;
@@ -101,13 +116,14 @@ select.form-control {
         min-height:50px;
         border: 1px solid #ced4da;
         background-color:#fff;
-        z-index:300;
+        z-index:1000;
         .list {
             padding:10px;
             list-style-type: none;
             margin:0;
             line-height:24px;
             a {
+                font-size:14px;
                 color:#333;
             }
         }
@@ -1185,16 +1201,18 @@ hr {
         padding:10px;
         background-color:#f7f8fa;
         border-bottom:solid 1px #000;
-        overflow: hidden;
+        // overflow: hidden;
         .contorl_select {
+            display:inline-block;
             width:25%;
-            float:left;
+            vertical-align:top;
         }
         .control_search {
+            display:inline-block;
             width:38%;
             margin-left:2%;
-            float:left;
             overflow: hidden;
+            vertical-align:top;
             .control_search_select {
                 width:40%;
                 float:left;
@@ -1206,9 +1224,10 @@ hr {
             }
         }
         .control_input {
-            width:33%;
+            display:inline-block;
+            width:35%;
             margin-left:2%;
-            float:left;
+            vertical-align:top;
             .control_txt_input {
                 width:60%;
                 float:left;
