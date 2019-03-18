@@ -178,7 +178,12 @@
                                                     <div class="input-group-append"><a href="#" class="btn btn-primary">조회</a></div>
                                                 </div>
                                             </td>
-                                            <th class="form_tit" rowspan="3">여권정보 <i class="red_dot">*</i></th>
+                                            <th class="form_tit" rowspan="3">
+                                                여권정보 <i class="red_dot">*</i>
+                                                <span class="add">
+                                                    ※임직원 회원정보의 여권정보와 일치하지 않습니다.
+                                                </span>
+                                            </th>
                                             <td class="form_cont">
                                                 <div class="label_form">
                                                     <span class="txt"><i class="red_dot">*</i> 여권번호</span>
@@ -420,6 +425,28 @@
                                 <li><button type="button" class="btn btn-secondary btn-sm">SK상품권</button></li>
                                 <li><button type="button" class="btn btn-secondary btn-sm">인보이스 생성</button></li>
                             </ul>
+                        </div>
+                        <div class="airport_info">
+                            <dl class="info">
+                                <dt class="tit">출국 : </dt>
+                                <dd class="cont">
+                                    <strong class="start">출발</strong>
+                                    <span class="txt">인천 국제공항(ICN)</span>
+                                    <i class="la la-arrow-right"></i>
+                                    <strong class="end">도착</strong>
+                                    <span class="txt">주부 국제공항(NGO)</span>
+                                </dd>
+                            </dl>
+                            <dl class="info">
+                                <dt class="tit">귀국 : </dt>
+                                <dd class="cont">
+                                    <strong class="end">출발</strong>
+                                    <span class="txt">주부 국제공항(NGO)</span>
+                                    <i class="la la-arrow-right"></i>
+                                    <strong class="start">도착</strong>
+                                    <span class="txt">인천 국제공항(ICN)</span>
+                                </dd>
+                            </dl>
                         </div>
                         <div class="tab_list">
                             <div class="table_scroll_x">
@@ -834,6 +861,14 @@
                         <div class="tab_list">
                             <div class="table_scroll_y">
                                 <table class="table table_middle">
+                                    <thead class="thead-inverse">
+                                        <tr>
+                                            <th>등록일</th>
+                                            <th>내용</th>
+                                            <th>등록자</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
                                     <tbody>
                                         <tr>
                                             <td>2019-03-03</td>

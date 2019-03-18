@@ -628,6 +628,11 @@ hr {
             float:left; 
             width:100%;
             padding-right:20px;
+            border-top: 1px solid #f4f5f8;
+            border-bottom: 2px solid #f4f5f8;
+            th {
+                border:0;
+            }
         }
         tbody {
             overflow-y:auto; 
@@ -922,21 +927,65 @@ hr {
     }
 }
 
+.airport_info {
+    .info {
+        margin:20px 0 20px 15px;
+        .tit {
+            display:inline-block;
+            font-size:14px;
+            font-weight:400;
+            margin-right:10px;
+        }
+        .cont {
+            display:inline-block;
+            margin:0;
+            strong {
+                display:inline-block;
+                background:#36a3f7;
+                border-radius:4px;
+                padding:2px 6px;
+                color:#fff;
+                font-size:14px;
+                font-weight:400;
+                margin-right:10px;
+                &.end {
+                    background-color:#f4516c;
+                }
+            }
+            .txt {
+                font-size:14px;
+                font-weight:400;
+                margin-right:15px;
+            }
+            .la {
+                position: relative;
+                top:2px;
+                font-weight:bold;
+                font-size:20px;
+                margin-right:15px;
+            }
+        }
+    }
+}
+
 .modal_board {
     .modal_head {
         background-color:#5867dd;
         color:#fff;
-        padding:10px;
+        padding:15px;
         .title {
-            font-size:14px;
+            font-size:18px;
             margin:0;
         }
         .close {
             position: absolute;
-            top:10px;
+            top:14px;
             right:15px;
             color:#fff !important;
             line-height: 16px;
+            i {
+                font-size:22px;
+            }
         }
     }
     .modal_content {
@@ -1032,7 +1081,7 @@ hr {
 
 .invoice_top {
     position: absolute;
-    top:50px;
+    top:68px;
     left:15px;
     width:300px;
     overflow: hidden;
@@ -1106,6 +1155,11 @@ hr {
             span {
                 background-color:#fff;
             }
+        }
+        .add {
+            display:block;
+            font-size:12px;
+            margin-top:5px;
         }
     }
     .form_cont {
@@ -1267,6 +1321,7 @@ hr {
             padding:10px;
             border:solid 1px #ebedf2;
             margin:0;
+            overflow-y:auto;
             li {
                 position: relative;
                 padding-left:24px;
@@ -1370,7 +1425,7 @@ hr {
 
 .invoice_info {
     position: absolute;
-    top:50px;
+    top:68px;
     right:20px;
     width:200px;
     overflow: hidden;
@@ -1386,6 +1441,10 @@ hr {
         input {
             padding:0 8px;
             height:25px;
+        }
+        .input-group-text {
+            padding-left:5px;
+            padding-right:5px;
         }
     }
 }
@@ -1552,15 +1611,23 @@ hr {
 .table_memo {
     table {
         border-top: 1px solid #f4f5f8;
-        tr {
-            td:nth-child(2){
-                width:300px !important;
-            }
-        }
     }
     td {
         border:0;
         border-bottom: 1px solid #f4f5f8;
+    }
+    thead {
+        th:nth-child(1) { width:20% !important; }
+        th:nth-child(2) { width:50% !important; }
+        th:nth-child(4) { width:15% !important; }
+        th:nth-child(5) { width:15% !important; }
+    }
+    tbody {
+        td:nth-child(1) { width:20% !important; }
+        td:nth-child(2) { width:50% !important; }
+        td:nth-child(4) { width:15% !important; }
+        td:nth-child(5) { width:15% !important; }
+        overflow-y: scroll !important;
     }
 }
 
@@ -1680,7 +1747,7 @@ hr {
         vertical-align:middle;
         line-height: 34px;
         margin-left:10px;
-        margin-top:-6px;
+        margin-top:1px;
     }
 }
 
