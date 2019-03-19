@@ -1110,6 +1110,35 @@ hr {
     }
 }
 
+.invoice_tourvis {
+    .sub_title {
+        margin:50px 0;
+        text-align:center;
+    }
+    .invoice_tourvis_info {
+        width:200px;
+        overflow: hidden;
+        dt {
+            width:50px;
+            line-height:25px;
+            font-weight:500;
+            float:left;
+        }
+        dd {
+            width:150px;
+            float:left;
+            input {
+                padding:0 8px;
+                height:25px;
+            }
+            .input-group-text {
+                padding-left:5px;
+                padding-right:5px;
+            }
+        }
+    }
+}
+
 .form_table {
     width:100%;
     .unit {

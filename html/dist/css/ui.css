@@ -831,6 +831,28 @@ hr.hide {
     font-weight: 500 !important;
     color: #000; }
 
+.invoice_tourvis .sub_title {
+  margin: 50px 0;
+  text-align: center; }
+
+.invoice_tourvis .invoice_tourvis_info {
+  width: 200px;
+  overflow: hidden; }
+  .invoice_tourvis .invoice_tourvis_info dt {
+    width: 50px;
+    line-height: 25px;
+    font-weight: 500;
+    float: left; }
+  .invoice_tourvis .invoice_tourvis_info dd {
+    width: 150px;
+    float: left; }
+    .invoice_tourvis .invoice_tourvis_info dd input {
+      padding: 0 8px;
+      height: 25px; }
+    .invoice_tourvis .invoice_tourvis_info dd .input-group-text {
+      padding-left: 5px;
+      padding-right: 5px; }
+
 .form_table {
   width: 100%; }
   .form_table .unit th {
