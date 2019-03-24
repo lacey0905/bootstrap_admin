@@ -58,7 +58,8 @@ select.form-control {
     font-size: 0; }
     .autoComplete.add_select .control_search_select {
       display: inline-block;
-      width: 39%; }
+      width: 39%;
+      vertical-align: top; }
     .autoComplete.add_select .auto_input {
       width: 59%;
       margin-left: 2%; }
@@ -311,6 +312,8 @@ hr.hide {
     font-weight: 500;
     font-size: 14px;
     border-bottom: 1px solid #ebedf2; }
+  .table_default tr:hover td {
+    background: #f7f8fa; }
   .table_default td {
     text-align: center;
     border-bottom: 1px solid #ebedf2;
@@ -325,9 +328,11 @@ hr.hide {
   .table_default.t_btn td {
     position: relative;
     padding-bottom: 60px; }
+    .table_default.t_btn td .name_list {
+      margin-top: 50px; }
     .table_default.t_btn td .btn {
       position: absolute;
-      bottom: 20px;
+      top: 25px;
       left: 50%;
       margin-left: -55px; }
   .table_default.menu_select label {
@@ -560,8 +565,7 @@ hr.hide {
         width: 25%; }
   .table_wrap table {
     width: 100%;
-    overflow-x: auto;
-    overflow-y: hidden; }
+    overflow-x: auto; }
   .table_wrap .m-checkbox {
     width: 18px;
     height: 18px;
@@ -1457,7 +1461,7 @@ hr.hide {
   width: 350px;
   margin: 0 auto; }
   .login_form .login_title {
-    margin: 60px auto 25px; }
+    margin: 100px auto 25px; }
     .login_form .login_title img {
       display: block;
       margin: 0 auto; }
@@ -1466,22 +1470,215 @@ hr.hide {
     text-align: center;
     color: #5867dd;
     margin-bottom: 40px; }
-  .login_form .login_field legend {
-    display: none;
-    text-indent: -9999px; }
-  .login_form .login_field .login_input_a {
+  .login_form .login_field {
+    padding-bottom: 100px; }
+    .login_form .login_field legend {
+      display: none;
+      text-indent: -9999px; }
+    .login_form .login_field .login_input_a {
+      display: block;
+      width: 100%;
+      height: 48px;
+      line-height: 48px;
+      font-size: 14px;
+      border-top: 0;
+      border-left: 0;
+      border-right: 0;
+      margin-bottom: 10px;
+      padding-left: 5px; }
+    .login_form .login_field .btn_submit {
+      display: block;
+      width: 100%;
+      font-size: 16px;
+      margin-top: 30px; }
+    .login_form .login_field .login_opt {
+      overflow: hidden; }
+      .login_form .login_field .login_opt .login_opt_item {
+        margin-top: 25px;
+        float: left; }
+        .login_form .login_field .login_opt .login_opt_item.check .check_icon {
+          position: relative;
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          border-radius: 100%;
+          background-color: #333;
+          vertical-align: top; }
+          .login_form .login_field .login_opt .login_opt_item.check .check_icon i {
+            display: none;
+            position: absolute;
+            left: 5px;
+            top: 5px;
+            color: #fff;
+            font-size: 10px; }
+        .login_form .login_field .login_opt .login_opt_item.check input {
+          display: none; }
+          .login_form .login_field .login_opt .login_opt_item.check input:checked + label .check_icon i {
+            display: block; }
+        .login_form .login_field .login_opt .login_opt_item.check label {
+          cursor: pointer; }
+          .login_form .login_field .login_opt .login_opt_item.check label .txt {
+            display: inline-block;
+            vertical-align: top;
+            line-height: 20px;
+            margin: 0;
+            margin-left: 5px; }
+        .login_form .login_field .login_opt .login_opt_item.link {
+          display: block;
+          float: right; }
+          .login_form .login_field .login_opt .login_opt_item.link a {
+            color: #333; }
+
+.member_form {
+  width: 1200px;
+  margin: 0 auto; }
+  .member_form .title {
+    margin: 60px auto 30px; }
+    .member_form .title img {
+      display: block;
+      margin: 0 auto; }
+  .member_form .form_title {
+    margin: 60px 0 15px;
+    font-size: 18px; }
+  .member_form .step_list {
+    position: relative;
+    background-color: #f2ebd5;
+    text-align: center;
+    padding: 35px 0; }
+    .member_form .step_list:after {
+      content: "";
+      position: absolute;
+      top: 50px;
+      left: 50%;
+      width: 430px;
+      margin-left: -215px;
+      height: 1px;
+      background-color: #c4ac7b;
+      z-index: 5; }
+    .member_form .step_list .step {
+      position: relative;
+      z-index: 10;
+      display: inline-block;
+      width: 100px;
+      margin: 0 50px; }
+      .member_form .step_list .step .number {
+        display: block;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        color: #c4ac7b;
+        margin: 0 auto;
+        font-style: normal;
+        background-color: #fff;
+        border-radius: 100%; }
+      .member_form .step_list .step.active .number {
+        background-color: #c4ac7b;
+        color: #fff; }
+      .member_form .step_list .step .txt {
+        display: block;
+        margin-top: 10px;
+        color: #c4ac7b; }
+  .member_form .member_field {
+    margin: 50px; }
+    .member_form .member_field .field_tit {
+      display: block;
+      font-size: 14px;
+      margin: 20px 0 30px;
+      border-bottom: solid 1px #333; }
+      .member_form .member_field .field_tit strong {
+        display: block;
+        font-size: 16px;
+        margin-bottom: 5px; }
+      .member_form .member_field .field_tit p {
+        font-size: 12px;
+        color: #666; }
+    .member_form .member_field .member_table {
+      margin-bottom: 50px; }
+      .member_form .member_field .member_table th {
+        width: 150px; }
+      .member_form .member_field .member_table th, .member_form .member_field .member_table td {
+        position: relative;
+        padding: 15px 0; }
+      .member_form .member_field .member_table td {
+        width: 350px; }
+      .member_form .member_field .member_table .opt_txt {
+        display: block;
+        margin-top: 5px;
+        color: #fd397a; }
+      .member_form .member_field .member_table .m-input {
+        padding-right: 120px; }
+      .member_form .member_field .member_table .set_email {
+        position: absolute;
+        top: 25px;
+        right: 20px; }
+  .member_form .complete_msg {
+    text-align: center;
+    border-bottom: solid 1px #ddd; }
+    .member_form .complete_msg strong {
+      display: block;
+      font-size: 18px;
+      color: #333; }
+    .member_form .complete_msg span {
+      display: block;
+      margin: 5px 0 30px; }
+  .member_form .cs_info {
+    margin: 30px 0 50px;
+    overflow: hidden; }
+    .member_form .cs_info .cs_box {
+      background-color: #eee;
+      padding: 20px;
+      width: 525px;
+      height: 170px;
+      margin-left: 50px;
+      float: left; }
+      .member_form .cs_info .cs_box:first-child {
+        margin-left: 0; }
+      .member_form .cs_info .cs_box dt {
+        color: #333;
+        margin-bottom: 10px; }
+      .member_form .cs_info .cs_box dd {
+        position: relative;
+        line-height: 34px;
+        margin: 0; }
+        .member_form .cs_info .cs_box dd button {
+          margin-left: 10px; }
+        .member_form .cs_info .cs_box dd:before {
+          content: "";
+          display: inline-block;
+          width: 2px;
+          height: 2px;
+          background-color: #333;
+          vertical-align: middle;
+          margin-right: 8px; }
+        .member_form .cs_info .cs_box dd.add_list:before {
+          content: none; }
+        .member_form .cs_info .cs_box dd.add_list ul {
+          list-style-type: none;
+          padding: 0; }
+          .member_form .cs_info .cs_box dd.add_list ul li {
+            margin: 0;
+            line-height: 24px; }
+        .member_form .cs_info .cs_box dd.add_list i {
+          position: absolute;
+          right: 0;
+          bottom: -50px;
+          font-size: 40px; }
+
+.login_out {
+  padding: 100px;
+  height: 500px;
+  background-color: #f7f8fa;
+  text-align: center; }
+  .login_out strong {
     display: block;
-    width: 100%;
-    height: 48px;
-    line-height: 48px;
+    font-weight: normal;
+    text-align: center;
+    font-size: 30px; }
+  .login_out p {
+    margin-top: 30px;
     font-size: 14px;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    margin-bottom: 10px;
-    padding-left: 5px; }
-  .login_form .login_field .btn_submit {
-    display: block;
-    width: 100%;
-    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 24px; }
+  .login_out button {
     margin-top: 30px; }
