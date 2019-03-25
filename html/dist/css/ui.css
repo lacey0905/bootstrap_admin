@@ -327,7 +327,7 @@ hr.hide {
     vertical-align: top; }
   .table_default.t_btn td {
     position: relative;
-    padding-bottom: 60px; }
+    padding-bottom: 30px; }
     .table_default.t_btn td .name_list {
       margin-top: 50px; }
     .table_default.t_btn td .btn {
@@ -846,6 +846,10 @@ hr.hide {
           width: 100px !important;
           margin: 0 auto; }
 
+.form_footer {
+  border-top: 1px solid #ebedf2;
+  padding: 20px 0 10px; }
+
 .invoice_tourvis {
   position: relative;
   min-width: 650px; }
@@ -853,11 +857,20 @@ hr.hide {
     text-align: left;
     margin: 5px 10px; }
   .invoice_tourvis .stamp {
-    width: 300px;
+    width: 100%;
     margin: 50px auto 40px;
     line-height: 28px;
     font-weight: bold;
     text-align: center; }
+    .invoice_tourvis .stamp .stamp_txt {
+      display: inline-block;
+      font-size: 20px;
+      font-weight: normal;
+      vertical-align: middle; }
+    .invoice_tourvis .stamp .stamp_img {
+      display: inline-block;
+      margin-left: 20px;
+      vertical-align: middle; }
   .invoice_tourvis > .txt {
     margin: 10px 0; }
   .invoice_tourvis .sub_title {
@@ -868,8 +881,8 @@ hr.hide {
   .invoice_tourvis .invoice_tourvis_head {
     margin-bottom: 30px; }
   .invoice_tourvis .invoice_tourvis_info.en .info_form_b {
-    width: 405px;
-    margin-left: calc(100% - 405px); }
+    width: 450px;
+    margin-left: calc(100% - 450px); }
     .invoice_tourvis .invoice_tourvis_info.en .info_form_b th {
       width: 180px; }
     .invoice_tourvis .invoice_tourvis_info.en .info_form_b td {
@@ -881,8 +894,8 @@ hr.hide {
     margin-left: calc(100% - 300px);
     overflow: hidden; }
   .invoice_tourvis .invoice_tourvis_info .info_form_b {
-    width: 345px;
-    margin-left: calc(100% - 345px); }
+    width: 450px;
+    margin-left: calc(100% - 450px); }
     .invoice_tourvis .invoice_tourvis_info .info_form_b .tit {
       width: 100% !important;
       text-align: center;
@@ -1342,6 +1355,30 @@ hr.hide {
     width: 38%;
     border-left: solid 1px #000;
     padding-left: 20px; }
+
+.sel_c {
+  position: relative; }
+  .sel_c .table_scroll_y .table tbody {
+    height: 200px; }
+  .sel_c .tab_list {
+    width: 50%; }
+  .sel_c .opt_table {
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    padding-left: 20px; }
+    .sel_c .opt_table .modal_form,
+    .sel_c .opt_table .form_table,
+    .sel_c .opt_table .form-control {
+      height: 100%; }
+    .sel_c .opt_table th {
+      width: 100px !important;
+      color: #000;
+      font-size: 14px; }
+    .sel_c .opt_table td {
+      width: 300px !important; }
 
 .tab_list th, .tab_list td {
   font-size: 12px;

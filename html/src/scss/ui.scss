@@ -435,7 +435,7 @@ hr {
     &.t_btn {
         td {
             position: relative;
-            padding-bottom:60px;
+            padding-bottom:30px;
             .name_list {
                 margin-top:50px;
             }
@@ -1137,6 +1137,11 @@ hr {
     }
 }
 
+.form_footer {
+    border-top:1px solid #ebedf2;
+    padding:20px 0 10px;
+}
+
 .invoice_tourvis {
     position: relative;
     min-width:650px;
@@ -1145,11 +1150,22 @@ hr {
         margin:5px 10px;
     }
     .stamp {
-        width:300px;
+        width:100%;
         margin:50px auto 40px;
         line-height:28px;
         font-weight:bold;
         text-align:center;
+        .stamp_txt {
+            display:inline-block;
+            font-size:20px;
+            font-weight:normal;
+            vertical-align:middle;
+        }
+        .stamp_img {
+            display:inline-block;
+            margin-left:20px;
+            vertical-align:middle;
+        }
     }
     &>.txt {
         margin:10px 0;
@@ -1166,8 +1182,8 @@ hr {
     .invoice_tourvis_info {
         &.en {
             .info_form_b {
-                width:405px;
-                margin-left:calc(100% - 405px);
+                width:450px;
+                margin-left:calc(100% - 450px);
                 th {
                     width:180px;
                 }
@@ -1185,8 +1201,8 @@ hr {
             overflow: hidden;
         }
         .info_form_b {
-            width:345px;
-            margin-left:calc(100% - 345px);
+            width:450px;
+            margin-left:calc(100% - 450px);
             .tit {
                 width:100% !important;
                 text-align:center;
@@ -1772,6 +1788,37 @@ hr {
         width:38%;
         border-left:solid 1px #000;
         padding-left:20px;
+    }
+}
+
+.sel_c {
+    position: relative;
+    .table_scroll_y .table tbody {
+        height:200px;
+    }
+    .tab_list {
+        width:50%;
+    }
+    .opt_table {
+        .modal_form,
+        .form_table,
+        .form-control {
+            height:100%;
+        }
+        position: absolute;
+        top:0px;
+        bottom:0;
+        right:0;
+        width:50%;
+        padding-left:20px;
+        th {
+            width:100px !important;
+            color:#000;
+            font-size:14px;
+        }
+        td {
+            width:300px !important;
+        }
     }
 }
 
