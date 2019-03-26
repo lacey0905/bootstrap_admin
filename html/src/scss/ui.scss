@@ -724,14 +724,21 @@ hr {
     width:100%;    
     overflow-x: auto;
     overflow-y: hidden;
+    font-size:13px;
     &.scroll {
         table {
             border-collapse:collapse; 
             width:100%;
             border-bottom:solid 1px #afafaf;
             margin:0;
+            th {
+                color:#212529;
+                font-weight:500;
+            }
             th, td {
                 width:100px;
+                font-size:13px;
+
             }
             thead {
                 float:left; 
@@ -750,7 +757,7 @@ hr {
                 display:table; 
                 width:100%;
                 th, td {
-                    width:25%;
+                    width:20%;
                 }
             }
         }
@@ -1075,13 +1082,13 @@ hr {
     .caption {
         margin-top:15px;
     }
-    .stamp {
-        width:200px;
-        margin:40px auto;
-        img {
-            width:100%;
-        }
-    }
+    // .stamp {
+    //     width:200px;
+    //     margin:40px auto;
+    //     img {
+    //         width:100%;
+    //     }
+    // }
     .notice {
         border-top:1px solid #ebedf2;
         strong {
@@ -1137,6 +1144,25 @@ hr {
     }
 }
 
+.stamp {
+    width:100%;
+    margin:50px auto 40px;
+    line-height:28px;
+    font-weight:bold;
+    text-align:center;
+    .stamp_txt {
+        display:inline-block;
+        font-size:20px;
+        font-weight:normal;
+        vertical-align:middle;
+    }
+    .stamp_img {
+        display:inline-block;
+        margin-left:20px;
+        vertical-align:middle;
+    }
+}
+
 .form_footer {
     border-top:1px solid #ebedf2;
     padding:20px 0 10px;
@@ -1149,24 +1175,7 @@ hr {
         text-align:left;
         margin:5px 10px;
     }
-    .stamp {
-        width:100%;
-        margin:50px auto 40px;
-        line-height:28px;
-        font-weight:bold;
-        text-align:center;
-        .stamp_txt {
-            display:inline-block;
-            font-size:20px;
-            font-weight:normal;
-            vertical-align:middle;
-        }
-        .stamp_img {
-            display:inline-block;
-            margin-left:20px;
-            vertical-align:middle;
-        }
-    }
+    
     &>.txt {
         margin:10px 0;
     }
@@ -1223,10 +1232,14 @@ hr {
             width:75px;
             line-height:25px;
             font-weight:500;
+            margin-bottom:10px;
             float:left;
         }
         dd {
             width:225px;
+            line-height:25px;
+            margin:0;
+            margin-bottom:10px;
             float:left;
             input {
                 padding:0 8px;
@@ -2268,4 +2281,93 @@ hr {
     button {
         margin-top:30px;
     }
+}
+
+// 아코디언 화살표 색깔
+.m-accordion.m-accordion--bordered .m-accordion__item .m-accordion__item-head .m-accordion__item-mode, 
+.m-accordion.m-accordion--default .m-accordion__item .m-accordion__item-head .m-accordion__item-mode {
+    color:#fff;
+}
+
+// 예약정보 아코디언 컬러
+// 요약 정보1
+.m-accordion .custom_color_a {
+    border: 1px solid #000 !important;
+}
+.m-accordion .custom_color_a .m-accordion__item-head, 
+.m-accordion .custom_color_a .m-accordion__item-head:hover {
+    background-color: #000 !important;
+}
+.m-accordion .custom_color_a .m-accordion__item-head>span {
+    color:#fff;
+}
+
+// 요약 정보2
+.m-accordion .custom_color_b {
+    border: 1px solid #36a3f7 !important;
+}
+.m-accordion .custom_color_b .m-accordion__item-head, 
+.m-accordion .custom_color_b .m-accordion__item-head:hover {
+    background-color: #36a3f7 !important;
+}
+.m-accordion .custom_color_b .m-accordion__item-head>span {
+    color:#fff;
+}
+
+// 요약 정보3
+.m-accordion .custom_color_c {
+    border: 1px solid #c4ac7b !important;
+}
+.m-accordion .custom_color_c .m-accordion__item-head, 
+.m-accordion .custom_color_c .m-accordion__item-head:hover {
+    background-color: #c4ac7b !important;
+}
+.m-accordion .custom_color_c .m-accordion__item-head>span {
+    color:#fff;
+}
+
+// 예약 정보
+.m-accordion .custom_color_d {
+    border: 1px solid #f4516c !important;
+}
+.m-accordion .custom_color_d .m-accordion__item-head, 
+.m-accordion .custom_color_d .m-accordion__item-head:hover {
+    background-color: #f4516c !important;
+}
+.m-accordion .custom_color_d .m-accordion__item-head>span {
+    color:#fff;
+}
+
+
+
+// 블루
+.btn-primary {
+    color: rgb(255, 255, 255) !important;
+    background-color: #5867dd !important;
+    border-color: #5867dd !important;
+}
+.btn-primary:hover {
+    color: #fff !important;
+    background-color: #384ad7 !important;
+    border-color: #2e40d4 !important;
+}
+// 기본
+.btn.btn-default, .btn.btn-secondary {
+    background: #fff !important;
+    border-color: #ebedf2 !important;
+}
+.btn.btn-secondary:hover:not(:disabled) {
+    border-color: #ebedf2 !important;
+    background-color: #f4f5f8 !important;
+}
+// 레드
+.btn-danger {
+    color: #fff !important;
+    background-color: #f4516c !important;
+    border-color: #f4516c !important;
+}
+.btn-danger:hover {
+    color: #fff !important;
+    background-color: #f22d4e !important;
+    border-color: #f12143 !important;
 }
