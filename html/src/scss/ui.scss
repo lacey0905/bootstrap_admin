@@ -738,7 +738,6 @@ hr {
             th, td {
                 width:100px;
                 font-size:13px;
-
             }
             thead {
                 float:left; 
@@ -806,6 +805,9 @@ hr {
             background-color:#f7f8fa;
             border:1px solid #ebedf2;
             min-width:50px;
+            font-weight:500;
+            color:#212529;
+            font-size:13px;
         }
     }
     tbody {
@@ -819,6 +821,13 @@ hr {
         }
     }
     &.box {
+        th {
+            font-weight:500 !important;
+            color:#212529 !important;
+        }
+        th, td {
+            font-size:13px !important;
+        }
         td {
             border:1px solid #ebedf2;
             border-top:0;
@@ -1996,7 +2005,7 @@ hr {
     width:350px;
     margin:0 auto;
     .login_title {
-        margin:100px auto 25px;
+        margin:150px auto 25px;
         img {
             display:block;
             margin:0 auto;
@@ -2009,7 +2018,7 @@ hr {
         margin-bottom:40px;
     }
     .login_field {
-        padding-bottom:100px;
+        padding-bottom:150px;
         legend {
             display:none;
             text-indent:-9999px;

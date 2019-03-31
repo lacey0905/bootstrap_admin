@@ -599,13 +599,21 @@ hr.hide {
   .table_wrap thead th {
     background-color: #f7f8fa;
     border: 1px solid #ebedf2;
-    min-width: 50px; }
+    min-width: 50px;
+    font-weight: 500;
+    color: #212529;
+    font-size: 13px; }
   .table_wrap tbody td {
     padding: 10px 0;
     border-bottom: 1px solid #ebedf2; }
     .table_wrap tbody td em {
       color: #36a3f7;
       font-style: normal; }
+  .table_wrap.box th {
+    font-weight: 500 !important;
+    color: #212529 !important; }
+  .table_wrap.box th, .table_wrap.box td {
+    font-size: 13px !important; }
   .table_wrap.box td {
     border: 1px solid #ebedf2;
     border-top: 0; }
@@ -1502,7 +1510,7 @@ hr.hide {
   width: 350px;
   margin: 0 auto; }
   .login_form .login_title {
-    margin: 100px auto 25px; }
+    margin: 150px auto 25px; }
     .login_form .login_title img {
       display: block;
       margin: 0 auto; }
@@ -1512,7 +1520,7 @@ hr.hide {
     color: #5867dd;
     margin-bottom: 40px; }
   .login_form .login_field {
-    padding-bottom: 100px; }
+    padding-bottom: 150px; }
     .login_form .login_field legend {
       display: none;
       text-indent: -9999px; }
